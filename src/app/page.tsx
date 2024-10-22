@@ -12,6 +12,33 @@ import Image from 'next/image'
 
 export default function ModernLandingPage() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, message }),
+      });
+
+      if (response.ok) {
+        setStatus('Email sent successfully!');
+        setEmail(''); // Clear the form
+        setMessage(''); // Clear the form
+      } else {
+        setStatus('Error sending email.');
+      }
+    } catch (error) {
+      setStatus('Error sending email.');
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -283,36 +310,41 @@ export default function ModernLandingPage() {
 
 
         <section id="demo" className="relative py-24 bg-blue-600 text-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-7xl mx-auto text-center">
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-6">Experience the Future with a Personalized Demo</h2>
-              <p className="text-lg mb-8">
-                Unlock the power of AI-driven insights and revolutionize your workflow. Let us show you how!
-              </p>
-              <div className="bg-white p-6 rounded-lg shadow-lg inline-block w-full max-w-2xl mx-auto">
-                <form className="flex flex-col gap-4">
-                  <input
-                    className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none w-full"
-                    placeholder="Enter your email"
-                    type="email"
-                    required
-                  />
-                  <textarea
-                    className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none w-full"
-                    placeholder="How can we help you?"
-                    rows={3}
-                  ></textarea>
-                  <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg">
-                    Request a Demo
-                  </Button>
-                </form>
-              </div>
-              <p className="mt-6 text-sm text-gray-200">
-                Our team will contact you shortly to schedule a live, personalized demo. No commitment required.
-              </p>
-            </div>
+      <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6">Experience the Future with a Personalized Demo</h2>
+          <p className="text-lg mb-8">
+            Unlock the power of AI-driven insights and revolutionize your workflow. Let us show you how!
+          </p>
+          <div className="bg-white p-6 rounded-lg shadow-lg inline-block w-full max-w-2xl mx-auto">
+            <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+              <input
+                className="p-4 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none w-full"
+                placeholder="Enter your email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <textarea
+                className="p-4 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none w-full"
+                placeholder="How can we help you?"
+                rows={3}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              ></textarea>
+              <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg">
+                Request a Demo
+              </Button>
+            </form>
+            {status && <p className="mt-4 text-white">{status}</p>}
           </div>
-        </section>
+          <p className="mt-6 text-sm text-gray-200">
+            Our team will contact you shortly to schedule a live, personalized demo. No commitment required.
+          </p>
+        </div>
+      </div>
+    </section>
 
 
       </main>
