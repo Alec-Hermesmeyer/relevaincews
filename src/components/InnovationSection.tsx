@@ -70,7 +70,7 @@ export default function InnovationSection() {
         Technology Disruptions and the Legal World
 
         </h2>
-        <p className="text-lg md:text-xl font-bold text-center mb-12 px-36">History is full of conventional " expert wisdom" being disrupted by technology realities. Common knowledge "knew" that - 
+        <p className="text-lg md:text-xl font-bold text-center mb-12 px-36">History is full of conventional &quot;expert wisdom&quot; being disrupted by technology realities. Common knowledge &quot;knew&quot; that - 
         </p>
         <div className="flex flex-wrap justify-center gap-8">
           {cards.map((card, index) => (

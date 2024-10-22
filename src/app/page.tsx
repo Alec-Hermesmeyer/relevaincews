@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from "next/link"
 import { motion } from 'framer-motion'
-import { Button, Input, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
+import { Button, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
 import {  Sparkles, Brain, Shield  } from "lucide-react"
 import Image from 'next/image'
 
