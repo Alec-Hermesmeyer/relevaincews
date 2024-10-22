@@ -9,8 +9,6 @@ const EMAIL_RECEIVER = "lisa.henry@relevaince.ai"
 export async function POST(req: NextRequest) {
   const { email, message } = await req.json();
 
-  console.log('EMAIL_USER:', EMAIL_USER);
-  console.log('EMAIL_PASS:', EMAIL_PASS);
   // Nodemailer setup for Gmail
   const transporter = nodemailer.createTransport({
     service: 'Gmail', // Ensure this is set to 'Gmail'
