@@ -339,10 +339,10 @@ export default function ModernLandingPage() {
             </form>
             {status && <p className="mt-4 text-white">{status}</p>}
           </div>
-          <p className="mt-6 text-sm text-gray-200">
+          <p className="mt-6 text-sm text-gray-200 mb-6">
             Our team will contact you shortly to schedule a live, personalized demo. No commitment required.
           </p>
-          <p className="text-sm text-white mb-4 md:mb-0  leading-relaxed">
+          <p className="text-sm text-white leading-relaxed">
           RelevAInce is a registered trademark of RelevAInce LLC (US Serial No. 98/165,416) Copyright 2024.</p>
         </div>
       </div>
