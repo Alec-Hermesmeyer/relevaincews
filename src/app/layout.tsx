@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.relevaince.ai",
     images: [
       {
-        url: "/Wordmark_wo_TM - White.ai (1).png",
+        url: "/LogoBlack.png",
         width: 800,
         height: 600,
         alt: "RelevAInce Logo",
