@@ -85,12 +85,12 @@ export default function ModernLandingPage() {
               <Image
                 src="/Wordmark_wo_TM - White.ai (1).png"
                 alt="LegalAI Pro"
-                width={750}
-                height={750}
+                width={650}
+                height={650}
               />
             </div>
 
-            <h1 className=" text-center text-5xl drop-shadow-2xl md:text-4xl font-extrabold pb-6 max-w-3xl mx-auto text-white leading-relaxed">
+            <h1 className=" text-center text-5xl drop-shadow-2xl md:text-4xl sm:text-2xl font-extrabold pb-6 max-w-3xl mx-auto text-white leading-relaxed">
               Overwhelming Complexity to Rapid Clarity
             </h1>
             <p className="pb-4 text-center text-lg font-bold max-w-3xl px-12 mx-auto text-white  leading-relaxed">
