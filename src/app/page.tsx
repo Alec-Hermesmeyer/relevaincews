@@ -24,7 +24,7 @@ export default function ModernLandingPage() {
 
   return (
     <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
-      
+
       <header className={`sticky top-0 z-50 bg-blue-700 transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
           <Link className="flex items-center justify-center" href="/">
@@ -61,7 +61,7 @@ export default function ModernLandingPage() {
                 height={750}
               />
             </div>
-             
+
             <h1 className=" text-center text-5xl drop-shadow-2xl md:text-4xl font-extrabold pb-6 max-w-3xl mx-auto text-white leading-relaxed">
               Overwhelming Complexity to Rapid Clarity
             </h1>
@@ -70,20 +70,20 @@ export default function ModernLandingPage() {
             </p>
             <p className="mb-4 text-center text-md font-bold max-w-3xl px-12 mx-auto text-white  leading-relaxed">
               Patent Pending Serial No. 63/677,032</p>
-           
+
           </div>
-            <h2 className="pb-8 max-w-3xl  text-4xl md:text-5xl font-extrabold text-center mx-auto text-white  leading-relaxed">Your ACE to WIN</h2>
-            <div className="flex justify-center space-x-6 mb-4">
-              <Button
-                size="lg"
-                className="shadow-md border hover:shadow-lg transition-transform transform hover:scale-105 w-72 text-xl"
-              >
-                <Link href="#demo">
-                  Request a Demo
-                </Link>
-              </Button>
-            </div>
-            
+          <h2 className="pb-8 max-w-3xl  text-4xl md:text-5xl font-extrabold text-center mx-auto text-white  leading-relaxed">Your ACE to WIN</h2>
+          <div className="flex justify-center space-x-6 mb-4">
+            <Button
+              size="lg"
+              className="shadow-md border hover:shadow-lg transition-transform transform hover:scale-105 w-72 text-xl"
+            >
+              <Link href="#demo">
+                Request a Demo
+              </Link>
+            </Button>
+          </div>
+
         </section>
 
         <section id="ace" className="relative py-2 bg-white h-auto">
@@ -91,6 +91,8 @@ export default function ModernLandingPage() {
             {/* Image Container */}
             <div className="container pb-2 mx-auto px-4 relative">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold drop-shadow-xl text-black text-left mb-4 pt-8">A.C.E</h2>
+              <p className="mb-4 text-left text-md font-bold max-w-3xl  mx-auto text-black  leading-relaxed">
+                RelevAInce is a registered trademark of RelevAInce LLC (US Serial No. 98/165,416) Copyright 2024.</p>
 
               {/* Cards Overlay on Background Image */}
               <div
