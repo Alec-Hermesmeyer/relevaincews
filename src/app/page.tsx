@@ -342,8 +342,7 @@ export default function ModernLandingPage() {
           <p className="mt-6 text-sm text-gray-200 mb-6">
             Our team will contact you shortly to schedule a live, personalized demo. No commitment required.
           </p>
-          <p className="text-sm text-white leading-relaxed">
-          RelevAInce is a registered trademark of RelevAInce LLC (US Serial No. 98/165,416) Copyright 2024.</p>
+
         </div>
       </div>
     </section>
@@ -354,7 +353,7 @@ export default function ModernLandingPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-white mb-4 md:mb-0">
-              © 2024 relevAInce All rights reserved.
+            RelevAInce is a registered trademark of RelevAInce LLC (US Serial No. 98/165,416) © 2024 relevAInce All rights reserved.
             </p>
            
             <nav className="flex gap-6">
