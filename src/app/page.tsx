@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from "next/link"
 import { motion } from 'framer-motion'
 import { Button, Input, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
-import { Scale, Sparkles, Brain, Shield, Star, CheckCircle, Car } from "lucide-react"
+import {  Sparkles, Brain, Shield  } from "lucide-react"
 import Image from 'next/image'
 
 
