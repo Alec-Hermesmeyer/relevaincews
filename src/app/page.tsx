@@ -36,7 +36,8 @@ export default function ModernLandingPage() {
         setStatus('Error sending email.');
       }
     } catch (error) {
-      setStatus('Error sending email.');
+      console.error('Error:', error);
+      setStatus('Error sending email.',);
     }
   };
 
