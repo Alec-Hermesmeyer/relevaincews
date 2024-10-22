@@ -96,8 +96,8 @@ export default function ModernLandingPage() {
             <p className="pb-4 text-center text-lg font-bold max-w-3xl px-12 mx-auto text-white  leading-relaxed">
               A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
             </p>
-            <p className="mb-4 text-center text-md font-bold max-w-3xl px-12 mx-auto text-white  leading-relaxed">
-              Patent Pending Serial No. 63/677,032</p>
+            <p className="mb-4 text-center text-sm font-bold max-w-3xl px-12 mx-auto text-white  leading-relaxed">
+              (Patent Pending Serial No. 63/677,032)</p>
 
           </div>
           <h2 className="pb-8 max-w-3xl  text-4xl md:text-5xl font-extrabold text-center mx-auto text-white  leading-relaxed">Your ACE to WIN</h2>
@@ -119,8 +119,7 @@ export default function ModernLandingPage() {
             {/* Image Container */}
             <div className="container pb-2 mx-auto px-4 relative">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold drop-shadow-xl text-black text-left mb-4 pt-8">A.C.E</h2>
-              <p className="mb-4 text-left text-md font-bold max-w-3xl  mx-auto text-black  leading-relaxed">
-                RelevAInce is a registered trademark of RelevAInce LLC (US Serial No. 98/165,416) Copyright 2024.</p>
+              
 
               {/* Cards Overlay on Background Image */}
               <div
@@ -343,6 +342,8 @@ export default function ModernLandingPage() {
           <p className="mt-6 text-sm text-gray-200">
             Our team will contact you shortly to schedule a live, personalized demo. No commitment required.
           </p>
+          <p className="text-sm text-white mb-4 md:mb-0  leading-relaxed">
+          RelevAInce is a registered trademark of RelevAInce LLC (US Serial No. 98/165,416) Copyright 2024.</p>
         </div>
       </div>
     </section>
@@ -355,6 +356,7 @@ export default function ModernLandingPage() {
             <p className="text-sm text-white mb-4 md:mb-0">
               © 2024 relevAInce All rights reserved.
             </p>
+           
             <nav className="flex gap-6">
 
             </nav>
