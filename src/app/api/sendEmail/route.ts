@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 
-const EMAIL_PASS = "rrfo psts unic qgnf"
-const EMAIL_USER = "ahrmsmyr@gmail.com"
-const EMAIL_RECEIVER = "lisa.henry@relevaince.ai"
+const EMAIL_PASS = process.env.EMAIL_PASS;
+const EMAIL_USER = process.env.MAIL_USER;
+const EMAIL_RECEIVER = process.env.EMAIL_RECEIVER;
 
 export async function POST(req: NextRequest) {
   const { email, message } = await req.json();
