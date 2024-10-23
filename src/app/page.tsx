@@ -90,7 +90,7 @@ export default function ModernLandingPage() {
               />
             </div>
 
-            <h1 className=" text-center text-xl drop-shadow-2xl md:text-4xl sm:text-2xl font-extrabold pb-6 max-w-3xl mx-auto text-white leading-relaxed">
+            <h1 className=" text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl font-extrabold pb-6 max-w-3xl mx-auto text-white leading-relaxed">
               Overwhelming Complexity to Rapid Clarity
             </h1>
             <p className="pb-4 text-center text-lg font-bold max-w-3xl px-12 mx-auto text-white  leading-relaxed">
