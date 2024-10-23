@@ -69,7 +69,7 @@ export default function ModernLandingPage() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="relative  pt-16 pb-32 bg-blue-600 to-lime-500">
+        <section className="relative  pt-16 pb-32 bg-blueback">
           {/* Clip-path Div */}
           <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
             <div
@@ -104,7 +104,7 @@ export default function ModernLandingPage() {
           <div className="flex justify-center space-x-6 mb-4">
             <Button
               size="lg"
-              className="shadow-md border hover:shadow-lg transition-transform transform hover:scale-105 w-72 text-xl"
+              className="shadow-xl  hover:shadow-2xl transition-transform transform hover:scale-105 w-54 text-xl bg-greenback hover:bg-lime-400"
             >
               <Link href="#demo">
                 Request a Demo
@@ -198,10 +198,10 @@ export default function ModernLandingPage() {
         </section>
 
 
-        <section className="py-12 relative bg-blue-600">
+        <section className="py-12 relative bg-blueback">
           <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
             <div
-              className="w-full h-60 bg-lime-400"
+              className="w-full h-60 bg-greenback"
               style={{ clipPath: "polygon(100% 0, 100% 100%,10% 100%)" }}
             ></div>
           </div>
@@ -252,7 +252,7 @@ export default function ModernLandingPage() {
 
 
 
-        <section id="features" className="relative py-6 bg-lime-400">
+        <section id="features" className="relative py-6 bg-greenback">
           <div className="container mx-auto px-4 relative">
             <h2 className=" text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extrabold text-left mb-4 pt-4">Key Features</h2>
 
@@ -309,7 +309,7 @@ export default function ModernLandingPage() {
 
 
 
-        <section id="demo" className="relative py-24 bg-blue-600 text-white">
+        <section id="demo" className="relative py-24 bg-blueback text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">Experience the Future with a Personalized Demo</h2>
@@ -351,14 +351,11 @@ export default function ModernLandingPage() {
       </main>
       <footer className="bg-gray-800  py-8">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-white mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-center items-center">
+            <p className="text-sm text-white mb-4 md:mb-0 text-center">
             RelevAInce is a registered trademark of RelevAInce LLC (US Serial No. 98/165,416) © 2024 relevAInce All rights reserved.
             </p>
            
-            <nav className="flex gap-6">
-
-            </nav>
           </div>
         </div>
       </footer>
