@@ -1,12 +1,10 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextResponse } from 'next/server';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { id } = req.query;
+// API route to fetch card data
+export async function GET(request: Request, { params }: { params: { id: string } }) {
+  const { id } = params;
 
-  // Fetch card data from a database, for example:
-  // const cardData = await database.getCardById(id);
-
-  // Simulate data for demonstration
+  // Simulate fetching card data for demonstration
   const cardData = {
     id,
     name: 'John Doe',
@@ -20,8 +18,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   };
 
   if (cardData) {
-    res.status(200).json(cardData);
+    return NextResponse.json(cardData, { status: 200 });
   } else {
-    res.status(404).json({ message: 'Card not found' });
+    return NextResponse.json({ message: 'Card not found' }, { status: 404 });
   }
 }
