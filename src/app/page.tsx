@@ -198,7 +198,7 @@ export default function ModernLandingPage() {
         </section>
 
 
-        <section className="py-12 relative bg-blueback">
+        <section className="py-24 relative bg-blueback">
           <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
             <div
               className="w-full h-60 bg-greenback"
@@ -252,7 +252,7 @@ export default function ModernLandingPage() {
 
 
 
-        <section id="features" className="relative py-6 bg-greenback">
+        <section id="features" className="relative py-24 bg-greenback">
           <div className="container mx-auto px-4 relative">
             <h2 className=" text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extrabold text-left mb-4 pt-4">Key Features</h2>
 
@@ -264,7 +264,7 @@ export default function ModernLandingPage() {
                 backgroundSize: "contain",
               }}
             >
-              <div className="grid gap-8 md:grid-cols-3 relative w-full px-4 md:px-0 z-10">
+              <div className="grid gap-8 md:grid-cols-3 pb-6 relative w-full px-4 md:px-0 z-10">
                 {[
                   {
                     icon: Sparkles,
