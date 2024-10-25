@@ -1,5 +1,5 @@
 'use client'
-
+import Script from 'next/script'
 import { useState, useEffect } from 'react'
 import Link from "next/link"
 import { motion } from 'framer-motion'
@@ -51,6 +51,23 @@ export default function ModernLandingPage() {
 
 
   return (
+    <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-3XJT1QWTXL"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3XJT1QWTXL');
+          `,
+        }}
+      />
     <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
 
       <header className={`sticky top-0 z-50 bg-blue-700 transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
