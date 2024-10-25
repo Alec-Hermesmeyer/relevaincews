@@ -66,7 +66,7 @@ export default function ModernLandingPage() {
         }}
       />
      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-3XJT1QWTXL"
+        src="https://www.googletagmanager.com/gtag/js?id=G-3KSD3V3WEX"
         strategy="afterInteractive"
       />
      <Script id="google-analytics" strategy="afterInteractive">
@@ -74,7 +74,7 @@ export default function ModernLandingPage() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-BXEC44GZQV');
+          gtag('config', 'G-3KSD3V3WEX');
         `}
       </Script>
       <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
