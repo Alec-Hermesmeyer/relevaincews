@@ -52,6 +52,10 @@ export default function ModernLandingPage() {
 
   return (
     <>
+     <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-3XJT1QWTXL"
+        strategy="afterInteractive"
+      />
      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
