@@ -179,11 +179,11 @@ export default function ModernLandingPage() {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="flex flex-col items-center justify-center mt-8 sm:mt-4"
                       >
-                        <Card className="bg-opacity-80 bg-gray-700 pt-4 pb-8 sm:pb-4 sm:h-auto rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 w-full">
+                        <Card className="bg-opacity-80 bg-gray-700 pt-4 pb-8 sm:pb-4 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 w-full md:min-h-[300px]">
                           <CardHeader>
                             <CardTitle className="text-xl sm:text-2xl font-semibold text-white">{feature.title}</CardTitle>
                           </CardHeader>
-                          <CardContent className="text-sm leading-relaxed text-white">{feature.description}</CardContent>
+                          <CardContent className="text-sm leading-relaxed text-white flex-grow">{feature.description}</CardContent>
                         </Card>
                       </motion.div>
                     ))}
