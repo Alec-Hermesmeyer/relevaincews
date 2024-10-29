@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from "next/link"
 import { motion } from 'framer-motion'
 import { Button, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
-import {  Sparkles, Brain, Shield  } from "lucide-react"
+import { Sparkles, Brain, Shield } from "lucide-react"
 import Image from 'next/image'
 
 
@@ -52,7 +52,7 @@ export default function ModernLandingPage() {
 
   return (
     <>
-    <Script
+      <Script
         id="google-tag-manager"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -65,11 +65,11 @@ export default function ModernLandingPage() {
           `,
         }}
       />
-     <Script
+      <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-3KSD3V3WEX"
         strategy="afterInteractive"
       />
-     <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -179,16 +179,17 @@ export default function ModernLandingPage() {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="flex flex-col items-center justify-center mt-8 sm:mt-4"
                       >
-                        <Card className="bg-opacity-80 bg-gray-700 pt-4 pb-8 h-60 mb-8 sm:mb-4 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 w-full">
+                        <Card className="bg-opacity-80 bg-gray-700 pt-4 pb-8 sm:pb-4 sm:h-auto rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 w-full">
                           <CardHeader>
-                            <CardTitle className="text-2xl font-semibold  text-white">{feature.title}</CardTitle>
+                            <CardTitle className="text-xl sm:text-2xl font-semibold text-white">{feature.title}</CardTitle>
                           </CardHeader>
-                          <CardContent className="text-sm text-white">{feature.description}</CardContent>
+                          <CardContent className="text-sm leading-relaxed text-white">{feature.description}</CardContent>
                         </Card>
                       </motion.div>
                     ))}
                   </div>
                 </div>
+
               </div>
 
               <motion.div
