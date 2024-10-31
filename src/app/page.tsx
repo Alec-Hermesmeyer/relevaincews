@@ -88,8 +88,8 @@ export default function ModernLandingPage() {
 
             </nav>
             <div className="flex items-center">
-              <Button className="ml-4">
-                <Link href="https://prod.relevaince.ai/" target="blank">Client Login</Link>
+              <Button className="ml-4 bg-sky-50 hover:bg-sky-100">
+                <Link href="https://prod.relevaince.ai/" target="blank" className='text-black'>Client Login</Link>
               </Button>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function ModernLandingPage() {
             {/* Clip-path Div */}
             <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
               <div
-                className="w-full h-60 bg-white"
+                className="w-full h-60 bg-gray-50"
                 style={{ clipPath: "polygon(100% 0, 100% 100%,10% 100%)" }}
               ></div>
             </div>
@@ -129,9 +129,9 @@ export default function ModernLandingPage() {
             <div className="flex justify-center space-x-6 mb-4">
               <Button
                 size="lg"
-                className="shadow-xl  hover:shadow-2xl transition-transform transform hover:scale-105 w-54 text-xl bg-blue-600 hover:bg-blue-800"
+                className="shadow-xl  hover:shadow-2xl transition-transform transform hover:scale-105 w-54 text-xl bg-sky-50 hover:bg-sky-100"
               >
-                <Link href="#demo">
+                <Link href="#demo" className='text-black'>
                   Request a Demo
                 </Link>
               </Button>
@@ -139,7 +139,7 @@ export default function ModernLandingPage() {
 
           </section>
 
-          <section id="ace" className="relative py-2 bg-white h-auto">
+          <section id="ace" className="relative py-2 bg-gray-50 h-auto">
             <div className="container pb-2 mx-auto px-4 relative">
               {/* Image Container */}
               <div className="container pb-2 mx-auto px-4 relative">
@@ -351,7 +351,7 @@ export default function ModernLandingPage() {
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
-                    <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg">
+                    <Button type="submit" size="lg" className="w-full bg-greenback hover:bg-lime-500 text-white py-3 rounded-lg">
                       Request a Demo
                     </Button>
                   </form>
