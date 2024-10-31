@@ -79,7 +79,7 @@ export default function ModernLandingPage() {
       </Script>
       <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
 
-        <header className={`sticky top-0 z-50 bg-blue-700 transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
+        <header className={`sticky top-0 z-50 bg-blueback transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
             <Link className="flex items-center justify-center" href="/">
               <Image src="/Wordmark_wo_TM - White.ai (1).png" alt="LegalAI Pro" width={180} height={180} className="w-32 sm:w-40 md:w-48 lg:w-56" />
@@ -129,7 +129,7 @@ export default function ModernLandingPage() {
             <div className="flex justify-center space-x-6 mb-4">
               <Button
                 size="lg"
-                className="shadow-xl  hover:shadow-2xl transition-transform transform hover:scale-105 w-54 text-xl bg-greenback hover:bg-lime-400"
+                className="shadow-xl  hover:shadow-2xl transition-transform transform hover:scale-105 w-54 text-xl bg-blue-600 hover:bg-blue-800"
               >
                 <Link href="#demo">
                   Request a Demo
