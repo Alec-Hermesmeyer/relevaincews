@@ -218,10 +218,10 @@ export default function ModernLandingPage() {
 
 
           <section className="py-24 relative bg-blueback">
-            <div className="absolute w-full inset-x-0 bottom-0 -left-0 z-0 ">
+            <div className="absolute w-full inset-x-0 -bottom-4 left-0 z-0  sm:-bottom-4 md:-bottom-2 lg:-bottom-6">
               <div
-                className="w-full h-36 bg-greenback"
-                style={{ clipPath: "polygon(50% 0, 100% 100%,0 100%)" }}
+                className="w-full h-36 sm:h-32 md:h-40 lg:h-48 bg-greenback"
+                style={{ clipPath: "polygon(50% 0, 100% 100%, 0 100%)" }}
               ></div>
             </div>
             <div className="container mx-auto px-4">
@@ -271,64 +271,64 @@ export default function ModernLandingPage() {
 
 
 
-          <section id="features" className="relative py-24 bg-greenback">
-  <div className="container mx-auto px-4 relative">
-    <h2 className="text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-left mb-4 pt-4">
-      Key Features
-    </h2>
+          <section id="features" className="relative py-24 bg-greenback mb-0 mt-0 sm:-mt-2 md:-mt-2 lg:mt-0">
+            <div className="container mx-auto px-4 relative">
+              <h2 className="text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-left mb-4 pt-4">
+                Key Features
+              </h2>
 
-    {/* Cards Overlay on Background Image */}
-    <div
-      className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-12"
-      style={{
-        backgroundImage: "url('/LogoDarkBlue.png')",
-        backgroundSize: "contain",
-      }}
-    >
-      <div className="grid gap-8 md:grid-cols-3 pb-2 md:pb-20 relative w-full px-4 md:px-0 z-10">
-        {[
-          {
-            icon: Sparkles,
-            title: "Smart Contract Analysis",
-            description: "AI-driven contract review and risk assessment in minutes.",
-          },
-          {
-            icon: Brain,
-            title: "Legal Research Assistant",
-            description: "Intelligent case law search and analysis for faster insights.",
-          },
-          {
-            icon: Shield,
-            title: "Risk Analysis",
-            description: "Automated risk analysis across jurisdictions, identifying threats in real time.",
-          },
-        ].map((feature, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300"
-          >
-            <feature.icon className="h-12 w-12 text-white mb-4" />
-            <h3 className="text-xl font-bold mb-2 text-white">{feature.title}</h3>
-            <p className="text-white">
-              {feature.description}
-            </p>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  </div>
-  
-  {/* Bottom Clipped Background */}
-  <div className="absolute w-full inset-x-0 bottom-[-159px] md:-bottom-40  z-10">
-    <div
-      className="w-full h-40 sm:h-32 md:h-40 bg-greenback"
-      style={{ clipPath: "polygon(50% 100%, 0 0, 100% 0)" }}
-    ></div>
-  </div>
-</section>
+              {/* Cards Overlay on Background Image */}
+              <div
+                className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-2 lg:py-12 md:py-8"
+                style={{
+                  backgroundImage: "url('/LogoDarkBlue.png')",
+                  backgroundSize: "contain",
+                }}
+              >
+                <div className="grid gap-8 md:grid-cols-3 pb-2 md:pb-20 relative w-full px-4 md:px-0 z-10">
+                  {[
+                    {
+                      icon: Sparkles,
+                      title: "Smart Contract Analysis",
+                      description: "AI-driven contract review and risk assessment in minutes.",
+                    },
+                    {
+                      icon: Brain,
+                      title: "Legal Research Assistant",
+                      description: "Intelligent case law search and analysis for faster insights.",
+                    },
+                    {
+                      icon: Shield,
+                      title: "Risk Analysis",
+                      description: "Automated risk analysis across jurisdictions, identifying threats in real time.",
+                    },
+                  ].map((feature, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300"
+                    >
+                      <feature.icon className="h-12 w-12 text-white mb-4" />
+                      <h3 className="text-xl font-bold mb-2 text-white">{feature.title}</h3>
+                      <p className="text-white">
+                        {feature.description}
+                      </p>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Clipped Background */}
+            <div className="absolute w-full inset-x-0 -bottom-28 sm:-bottom-32 md:-bottom-44 lg:-bottom-48 z-10">
+              <div
+                className="w-full h-32 sm:h-48 md:h-48 lg:h-52 bg-greenback"
+                style={{ clipPath: "polygon(50% 100%, 0 0, 100% 0)" }}
+              ></div>
+            </div>
+          </section>
 
 
 
@@ -339,7 +339,7 @@ export default function ModernLandingPage() {
           <section id="demo" className="relative py-20 bg-blueback text-white">
 
             <div className="container relative mx-auto  px-4 z-10">
-              <div className="max-w-7xl mx-auto text-center pt-24 md:pt-24">
+              <div className="max-w-7xl mx-auto text-center pt-8 sm:pt-8 md:pt-28 lg:pt-32">
                 <h2 className="text-4xl md:text-5xl font-extralight font-roboto mb-6 z-20 drop-shadow-2xl">
                   Experience the Future with a Personalized Demo
                 </h2>
