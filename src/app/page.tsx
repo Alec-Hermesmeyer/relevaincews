@@ -95,7 +95,7 @@ export default function ModernLandingPage() {
         <main className="flex-1">
           <section className="relative  pt-24 pb-72 bg-blueback">
             {/* Clip-path Div */}
-            <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
+            <div className="absolute w-full inset-x-0 -bottom-12 left-0 z-0 lg:left-28 md:left-28 lg:-bottom-3 md:-bottom-3">
               <div
                 className="w-full h-60 bg-slate-200"
                 style={{ clipPath: "polygon(100% 0, 100% 100%,10% 100%)" }}
