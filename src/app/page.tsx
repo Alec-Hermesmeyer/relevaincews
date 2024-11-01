@@ -122,7 +122,7 @@ export default function ModernLandingPage() {
 
             </div>
 
-            <h1 className="font-roboto font-extralight pt-12 text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl  max-w-3xl mx-auto text-slate-100 leading-relaxed">
+            <h1 className="font-roboto font-extralight pt-12 text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl  max-w-3xl mx-auto text-[#8083a3] leading-relaxed">
               Overwhelming Complexity to Rapid Clarity
             </h1>
             <div className="flex justify-center space-x-6 mb-4">
