@@ -139,7 +139,7 @@ export default function ModernLandingPage() {
                 <p className="pb-6 pt-12 text-center text-lg font-thin max-w-4xl px-12 mx-auto text-black  leading-relaxed">
                   A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
                 </p>
-                <h2 className="font-extralight font-roboto pb-2 max-w-3xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
+                <h2 className="font-extralight font-roboto  max-w-3xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
 
 
 
