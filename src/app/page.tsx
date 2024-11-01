@@ -147,7 +147,7 @@ export default function ModernLandingPage() {
                 <div
                   className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-8"
                   style={{
-                    backgroundImage: "url('/LogoLimeGreen.png')",
+                    backgroundImage: "url('/LogoPurple.png')",
                     backgroundSize: "contain",
                   }}
                 >
