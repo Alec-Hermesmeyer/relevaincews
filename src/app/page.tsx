@@ -84,7 +84,7 @@ export default function ModernLandingPage() {
         <header className={`sticky top-0 z-50 bg-blueback transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
             <Link className="flex items-center justify-center" href="/">
-              <Image src="/LogoWhite.png" alt="LegalAI Pro" width={80} height={80} className="w-12 sm:w-12 md:w-12 lg:w-12" />
+              <Image src="/LogoPurple.png" alt="LegalAI Pro" width={80} height={80} className="w-12 sm:w-12 md:w-12 lg:w-12" />
             </Link>
             <nav className="hidden md:flex space-x-8 text-white justify-end">
 
