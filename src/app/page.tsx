@@ -121,7 +121,7 @@ export default function ModernLandingPage() {
                 (Patent Pending Serial No. 63/677,032)</p>
 
             </div>
-            {/* <h2 className="font-extralight font-roboto pb-8 max-w-3xl  text-4xl md:text-5xl  text-center mx-auto text-white  leading-relaxed">Your ACE to WIN</h2> */}
+            
             <h1 className="font-roboto font-extralight pt-12 text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl  max-w-3xl mx-auto text-slate-100 leading-relaxed">
               Overwhelming Complexity to Rapid Clarity
             </h1>
@@ -136,7 +136,7 @@ export default function ModernLandingPage() {
               {/* Image Container */}
               <div className="container pb-2 mx-auto px-4 relative">
 
-                <p className="py-6 text-center text-lg font-thin max-w-3xl px-12 mx-auto text-black  leading-relaxed">
+                <p className="pb-6 pt-12 text-center text-lg font-thin max-w-3xl px-12 mx-auto text-black  leading-relaxed">
                   A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
                 </p>
                 <h2 className="font-extralight font-roboto pb-8 max-w-7xl  text-4xl md:text-5xl  text-left mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
