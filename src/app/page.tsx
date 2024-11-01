@@ -178,7 +178,7 @@ export default function ModernLandingPage() {
                       >
                         <Card className="bg-opacity-80 bg-gray-700 pt-4 pb-8 sm:pb-4 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 w-full md:min-h-[300px] border-4 border-[#8083a3]">
                           <CardHeader>
-                            <CardTitle className="text-xl sm:text-2xl font-semibold text-white">{feature.title}</CardTitle>
+                            <CardTitle className="text-xl sm:text-2xl font-sans font-thin text-white">{feature.title}</CardTitle>
                           </CardHeader>
                           <CardContent className="text-sm leading-relaxed text-white flex-grow">{feature.description}</CardContent>
                         </Card>
@@ -230,37 +230,37 @@ export default function ModernLandingPage() {
 
                 {/* <!-- Scale Learning --> */}
                 <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
-                  <h3 className=" text-2xl font-semibold text-white mb-2">Scale</h3>
+                  <h3 className=" text-2xl font-sans font-thin text-white mb-2">Scale</h3>
                   <p className="text-white ">Handle vast, intricate datasets (e.g., terabytes of data, millions of files) efficiently.</p>
                 </div>
 
                 {/* <!-- Rapid Results --> */}
                 <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
-                  <h3 className="text-2xl font-semibold text-white mb-2">Speed</h3>
+                  <h3 className="text-2xl font-sans font-thin text-white mb-2">Speed</h3>
                   <p className="text-white ">Obtain results in seconds or minutes, rather than hours, days, weeks, or months.</p>
                 </div>
 
                 {/* <!-- Quality Analysis --> */}
                 <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
-                  <h3 className="text-2xl font-semibold text-white mb-2">Accuracy</h3>
+                  <h3 className="text-2xl font-sans font-thin text-white mb-2">Accuracy</h3>
                   <p className="text-white ">Swiftly gather and analyze large datasets with high precision and effectiveness.</p>
                 </div>
 
                 {/* <!-- Task-Oriented AI --> */}
                 <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
-                  <h3 className="text-2xl font-semibold text-white mb-2">Task-Oriented AI</h3>
+                  <h3 className="text-2xl font-sans font-thin text-white mb-2">Task-Oriented AI</h3>
                   <p className="text-white ">AI agents distill complex information into accurate and clear responses in seconds.</p>
                 </div>
 
                 {/* <!-- Trust & Verify --> */}
                 <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
-                  <h3 className="text-2xl font-semibold text-white mb-2">Trust & Verify</h3>
+                  <h3 className="text-2xl font-sans font-thin text-white mb-2">Trust & Verify</h3>
                   <p className="text-white ">Accessible citations, links, and references ensure accuracy and reliability.</p>
                 </div>
 
                 {/* <!-- Privacy & Security --> */}
                 <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
-                  <h3 className="text-2xl font-semibold text-white mb-2">Privacy & Security</h3>
+                  <h3 className="text-2xl font-sans font-thin text-white mb-2">Privacy & Security</h3>
                   <p className="text-white ">All interactions are fully encrypted and secure for maximum privacy.</p>
                 </div>
 
@@ -311,7 +311,7 @@ export default function ModernLandingPage() {
                       className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300"
                     >
                       <feature.icon className="h-12 w-12 text-white mb-4" />
-                      <h3 className="text-xl font-roboto font-bold mb-2 text-white">{feature.title}</h3>
+                      <h3 className="text-xl font-sans font-medium mb-2 text-white">{feature.title}</h3>
                       <p className="text-white">
                         {feature.description}
                       </p>
