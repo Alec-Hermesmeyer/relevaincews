@@ -111,8 +111,8 @@ export default function ModernLandingPage() {
                 <Image
                   src="/Wordmark_wo_TM - White.ai (1).png"
                   alt="LegalAI Pro"
-                  width={650}
-                  height={650} />
+                  width={850}
+                  height={850} />
               </div>
 
 
@@ -136,7 +136,7 @@ export default function ModernLandingPage() {
               {/* Image Container */}
               <div className="container pb-2 mx-auto px-4 relative">
 
-                <p className="pb-6 pt-12 text-center text-lg font-thin max-w-4xl px-12 mx-auto text-black  leading-relaxed">
+                <p className="pb-6 pt-12 text-center text-lg font-thin max-w-5xl md:max-w-4xl lg:max-w-4xl px-12 mx-auto text-black  leading-relaxed">
                   A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
                 </p>
                 <h2 className="font-extralight font-roboto  max-w-3xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
@@ -281,7 +281,7 @@ export default function ModernLandingPage() {
               <div
                 className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-2 lg:py-12 md:py-8"
                 style={{
-                  backgroundImage: "url('/LogoLimeGreen.png')",
+                  backgroundImage: "url('/LogoPurple.png')",
                   backgroundSize: "contain",
                 }}
               >
@@ -308,9 +308,9 @@ export default function ModernLandingPage() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300"
+                      className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300 border-4 border-[#8083a3]"
                     >
-                      <feature.icon className="h-12 w-12 text-white mb-4" />
+                      <feature.icon className="h-12 w-12 text-greenback mb-4" />
                       <h3 className="text-xl font-sans font-medium mb-2 text-white">{feature.title}</h3>
                       <p className="text-white">
                         {feature.description}
