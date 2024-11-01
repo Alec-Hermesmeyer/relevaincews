@@ -218,10 +218,10 @@ export default function ModernLandingPage() {
 
 
           <section className="py-24 relative bg-blueback">
-            <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
+            <div className="absolute w-full inset-x-0 bottom-0 -left-0 z-0 ">
               <div
-                className="w-full h-60 bg-greenback"
-                style={{ clipPath: "polygon(100% 0, 100% 100%,10% 100%)" }}
+                className="w-full h-36 bg-greenback"
+                style={{ clipPath: "polygon(50% 0, 100% 100%,0 100%)" }}
               ></div>
             </div>
             <div className="container mx-auto px-4">
@@ -272,67 +272,81 @@ export default function ModernLandingPage() {
 
 
           <section id="features" className="relative py-24 bg-greenback">
-            <div className="container mx-auto px-4 relative">
-              <h2 className=" text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-left mb-4 pt-4">Key Features</h2>
+  <div className="container mx-auto px-4 relative">
+    <h2 className="text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-left mb-4 pt-4">
+      Key Features
+    </h2>
 
-              {/* Cards Overlay on Background Image */}
-              <div
-                className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-12"
-                style={{
-                  backgroundImage: "url('/LogoDarkBlue.png')",
-                  backgroundSize: "contain",
-                }}
-              >
-                <div className="grid gap-8 md:grid-cols-3 pb-6 relative w-full px-4 md:px-0 z-10">
-                  {[
-                    {
-                      icon: Sparkles,
-                      title: "Smart Contract Analysis",
-                      description: "AI-driven contract review and risk assessment in minutes.",
-                    },
-                    {
-                      icon: Brain,
-                      title: "Legal Research Assistant",
-                      description: "Intelligent case law search and analysis for faster insights.",
-                    },
-                    {
-                      icon: Shield,
-                      title: "Risk Analysis",
-                      description: "Automated risk analysis across jurisdictions, identifying threats in real time.",
-                    },
-                  ].map((feature, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300"
-                    >
-                      <feature.icon className="h-12 w-12 text-white mb-4" />
-                      <h3 className="text-xl font-bold mb-2 text-white">{feature.title}</h3>
-                      <p className="text-white">
-                        {feature.description}
-                      </p>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
+    {/* Cards Overlay on Background Image */}
+    <div
+      className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-12"
+      style={{
+        backgroundImage: "url('/LogoDarkBlue.png')",
+        backgroundSize: "contain",
+      }}
+    >
+      <div className="grid gap-8 md:grid-cols-3 pb-2 md:pb-20 relative w-full px-4 md:px-0 z-10">
+        {[
+          {
+            icon: Sparkles,
+            title: "Smart Contract Analysis",
+            description: "AI-driven contract review and risk assessment in minutes.",
+          },
+          {
+            icon: Brain,
+            title: "Legal Research Assistant",
+            description: "Intelligent case law search and analysis for faster insights.",
+          },
+          {
+            icon: Shield,
+            title: "Risk Analysis",
+            description: "Automated risk analysis across jurisdictions, identifying threats in real time.",
+          },
+        ].map((feature, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300"
+          >
+            <feature.icon className="h-12 w-12 text-white mb-4" />
+            <h3 className="text-xl font-bold mb-2 text-white">{feature.title}</h3>
+            <p className="text-white">
+              {feature.description}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  {/* Bottom Clipped Background */}
+  <div className="absolute w-full inset-x-0 bottom-[-159px] md:-bottom-40  z-10">
+    <div
+      className="w-full h-40 sm:h-32 md:h-40 bg-greenback"
+      style={{ clipPath: "polygon(50% 100%, 0 0, 100% 0)" }}
+    ></div>
+  </div>
+</section>
 
 
 
 
 
 
-          <section id="demo" className="relative py-24 bg-blueback text-white">
-            <div className="container mx-auto px-4">
-              <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl font-extralight font-roboto mb-6">Experience the Future with a Personalized Demo</h2>
-                <p className="text-lg mb-8">
+
+          <section id="demo" className="relative py-20 bg-blueback text-white">
+
+            <div className="container relative mx-auto  px-4 z-10">
+              <div className="max-w-7xl mx-auto text-center pt-20 md:pt-24">
+                <h2 className="text-4xl md:text-5xl font-extralight font-roboto mb-6 z-20 drop-shadow-2xl">
+                  Experience the Future with a Personalized Demo
+                </h2>
+                <p className="text-lg mb-8 z-20">
                   Unlock the power of AI-driven insights and revolutionize your workflow. Let us show you how!
                 </p>
-                <div className="bg-white p-6 rounded-lg shadow-lg inline-block w-full max-w-2xl mx-auto">
+                <div className="bg-white p-6 rounded-lg shadow-lg inline-block w-full max-w-2xl mx-auto z-20">
                   <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                     <input
                       className="p-4 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none w-full"
@@ -340,7 +354,8 @@ export default function ModernLandingPage() {
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      required />
+                      required
+                    />
                     <textarea
                       className="p-4 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:outline-none w-full"
                       placeholder="How can we help you?"
@@ -354,13 +369,13 @@ export default function ModernLandingPage() {
                   </form>
                   {status && <p className="mt-4 text-white">{status}</p>}
                 </div>
-                <p className="mt-6 text-sm text-gray-200 mb-6">
+                <p className="mt-6 text-sm text-gray-200 mb-6 z-20">
                   Our team will contact you shortly to schedule a live, personalized demo. No commitment required.
                 </p>
-
               </div>
             </div>
           </section>
+
 
 
         </main>
