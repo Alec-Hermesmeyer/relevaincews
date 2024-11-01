@@ -6,23 +6,8 @@ import { motion } from 'framer-motion'
 import { Button, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
 import { Sparkles, Brain, Shield } from "lucide-react"
 import Image from 'next/image'
-import { Lora, Work_Sans, Roboto } from '@next/font/google';
 
-const lora = Lora({
-  weight: ['400', '700'], // specify weights for thin styles
-  subsets: ['latin'],
-  display: 'swap',
-});
-const sans = Work_Sans({
-  weight: ['100'], // specify weights for thin styles
-  subsets: ['latin'],
-  display: 'swap',
-});
-const roboto = Roboto({
-  weight: ['100'], // Use the thinnest weight for an ultra-light effect
-  subsets: ['latin'],
-  display: 'swap',
-});
+
 
 
 
