@@ -330,7 +330,7 @@ export default function ModernLandingPage() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300 border-4 border-[#8083a3]"
+                      className="bg-opacity-80 bg-gray-700 px-6 py-16 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300 border-4 border-[#8083a3]"
                     >
                       <feature.icon className="h-12 w-12 text-greenback mb-4" />
                       <h3 className="text-xl font-sans font-medium mb-2 text-white">{feature.title}</h3>
