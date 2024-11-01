@@ -97,7 +97,7 @@ export default function ModernLandingPage() {
             {/* Clip-path Div */}
             <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
               <div
-                className="w-full h-60 bg-gray-100"
+                className="w-full h-60 bg-slate-200"
                 style={{ clipPath: "polygon(100% 0, 100% 100%,10% 100%)" }}
               ></div>
             </div>
@@ -131,7 +131,7 @@ export default function ModernLandingPage() {
 
           </section>
 
-          <section id="ace" className="relative py-2 bg-gray-100 h-auto">
+          <section id="ace" className="relative py-2 bg-slate-200 h-auto">
             <div className="container pb-2 mx-auto px-4 relative">
               {/* Image Container */}
               <div className="container pb-2 mx-auto px-4 relative">
