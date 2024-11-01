@@ -339,7 +339,7 @@ export default function ModernLandingPage() {
           <section id="demo" className="relative py-20 bg-blueback text-white">
 
             <div className="container relative mx-auto  px-4 z-10">
-              <div className="max-w-7xl mx-auto text-center pt-20 md:pt-24">
+              <div className="max-w-7xl mx-auto text-center pt-24 md:pt-24">
                 <h2 className="text-4xl md:text-5xl font-extralight font-roboto mb-6 z-20 drop-shadow-2xl">
                   Experience the Future with a Personalized Demo
                 </h2>
