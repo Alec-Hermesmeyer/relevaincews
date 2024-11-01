@@ -195,7 +195,7 @@ export default function ModernLandingPage() {
                 transition={{ duration: 0.5 }}
                 className="mt-8"
               >
-                <div className="flex flex-wrap items-center justify-around mx-auto px-4 sm:px-8">
+                {/* <div className="flex flex-wrap items-center justify-around mx-auto px-4 sm:px-8">
                   {[
                     { imgSrc: '/claims.png', label: 'Claims' },
                     { imgSrc: '/contracts.png', label: 'Contracts' },
@@ -211,7 +211,7 @@ export default function ModernLandingPage() {
                       <p className="text-center text-base sm:text-lg font-bold text-black mt-2">{item.label}</p>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </motion.div>
             </div>
           </section>
