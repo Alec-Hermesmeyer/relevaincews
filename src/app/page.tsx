@@ -87,33 +87,33 @@ export default function ModernLandingPage() {
       </Script>
       <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
 
-      <header className={`sticky top-0 z-50 bg-blueback transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
-        <Link className="flex items-center justify-center" href="/">
-          <Image src="/LogoPurple.png" alt="LegalAI Pro" width={80} height={80} className="w-20 sm:w-20 md:w-20 lg:w-20" />
-        </Link>
-        
-        {/* Hamburger Menu Icon */}
-        <div className="absolute top-10 right-4 md:top-10 lg:top-10 lg:right-16 md:right-16">
-          <Button onClick={toggleMenu} className="text-white focus:outline-none bg-transparent hover:bg-transparent">
-            {isOpen ? (
-              <XIcon className="h-8 w-8 transition duration-200 cursor-pointer" aria-hidden="true" />
-            ) : (
-              <MenuIcon className="h-12 w-12 transition duration-200 cursor-pointer" aria-hidden="true" />
-            )}
-          </Button>
-        </div>
+        <header className={`sticky top-0 z-50 bg-blueback transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+            <Link className="flex items-center justify-center" href="/">
+              <Image src="/LogoPurple.png" alt="LegalAI Pro" width={80} height={80} className="w-20 sm:w-20 md:w-20 lg:w-20" />
+            </Link>
 
-        {/* Navigation Links - toggle visibility with transition */}
-        {isOpen && (
-          <nav className="absolute top-6 right-16  md:right-28 md:top-6 lg:top-6 lg:right-28 p-4  transition-transform duration-300 ease-out  scale-95 animate-fade-in">
-            <Button size="sm" className="w-full bg-slate-200 hover:bg-slate-400 text-white py-3 rounded-lg">
-              <Link href="https://prod.relevaince.ai/" className="block px-4 py-2 text-black">Client Login</Link>
-            </Button>
-          </nav>
-        )}
-      </div>
-    </header>
+            {/* Hamburger Menu Icon */}
+            <div className="absolute top-10 right-4 md:top-10 lg:top-10 lg:right-16 md:right-16">
+              <Button onClick={toggleMenu} className="text-white focus:outline-none bg-transparent hover:bg-transparent">
+                {isOpen ? (
+                  <XIcon className="h-8 w-8 transition duration-200 cursor-pointer" aria-hidden="true" />
+                ) : (
+                  <MenuIcon className="h-12 w-12 transition duration-200 cursor-pointer" aria-hidden="true" />
+                )}
+              </Button>
+            </div>
+
+            {/* Navigation Links - toggle visibility with transition */}
+            {isOpen && (
+              <nav className="absolute top-6 right-16  md:right-28 md:top-6 lg:top-6 lg:right-28 p-4  transition-transform duration-300 ease-out  scale-95 animate-fade-in">
+                <Button size="sm" className="w-full bg-slate-200 hover:bg-slate-400 text-white py-3 rounded-lg">
+                  <Link href="https://prod.relevaince.ai/" className="block px-4 py-2 text-black">Client Login</Link>
+                </Button>
+              </nav>
+            )}
+          </div>
+        </header>
         <main className="flex-1">
           <section className="relative  pt-24 pb-72 bg-blueback">
             {/* Clip-path Div */}
@@ -301,13 +301,12 @@ export default function ModernLandingPage() {
 
               {/* Cards Overlay on Background Image */}
               <div
-                className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-2 lg:py-12 md:py-8"
-                style={{
+                className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-2" style={{
                   backgroundImage: "url('/LogoPurple.png')",
                   backgroundSize: "contain",
                 }}
               >
-                <div className="grid gap-8 md:grid-cols-3 pb-2 md:pb-20 relative w-full px-4 md:px-0 z-10">
+                <div className="grid gap-8 md:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-4 md:px-0 z-10">
                   {[
                     {
                       icon: Sparkles,
