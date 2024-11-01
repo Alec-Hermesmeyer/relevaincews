@@ -14,6 +14,11 @@ const config: Config = {
         blueback: 'var(--blueback)',
         greenback: 'var(--greenback)'
       },
+      fontFamily: {
+        lora: ['Lora', 'serif'],
+        sans: ['Work Sans', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],

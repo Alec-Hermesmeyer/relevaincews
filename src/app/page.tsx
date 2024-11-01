@@ -6,6 +6,23 @@ import { motion } from 'framer-motion'
 import { Button, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
 import { Sparkles, Brain, Shield } from "lucide-react"
 import Image from 'next/image'
+import { Lora, Work_Sans, Roboto } from '@next/font/google';
+
+const lora = Lora({
+  weight: ['400', '700'], // specify weights for thin styles
+  subsets: ['latin'],
+  display: 'swap',
+});
+const sans = Work_Sans({
+  weight: ['100'], // specify weights for thin styles
+  subsets: ['latin'],
+  display: 'swap',
+});
+const roboto = Roboto({
+  weight: ['100'], // Use the thinnest weight for an ultra-light effect
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 
 
@@ -82,20 +99,16 @@ export default function ModernLandingPage() {
         <header className={`sticky top-0 z-50 bg-blueback transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
             <Link className="flex items-center justify-center" href="/">
-              <Image src="/Wordmark_wo_TM - White.ai (1).png" alt="LegalAI Pro" width={180} height={180} className="w-32 sm:w-40 md:w-48 lg:w-56" />
+              <Image src="/LogoWhite.png" alt="LegalAI Pro" width={80} height={80} className="w-12 sm:w-12 md:w-12 lg:w-12" />
             </Link>
             <nav className="hidden md:flex space-x-8 text-white justify-end">
 
             </nav>
-            <div className="flex items-center">
-              <Button className="ml-4 bg-sky-50 hover:bg-sky-100">
-                <Link href="https://prod.relevaince.ai/" target="blank" className='text-black'>Client Login</Link>
-              </Button>
-            </div>
+
           </div>
         </header>
         <main className="flex-1">
-          <section className="relative  pt-16 pb-32 bg-blueback">
+          <section className="relative  pt-24 pb-72 bg-blueback">
             {/* Clip-path Div */}
             <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
               <div
@@ -106,7 +119,9 @@ export default function ModernLandingPage() {
 
             {/* Content Div */}
             <div className="relative z-10 container mx-auto px-6 md:px-10 lg:px-20">
-
+              {/* <h1 className="font-roboto font-extralight text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl  pb-12 max-w-3xl mx-auto text-white leading-relaxed">
+                Overwhelming Complexity to Rapid Clarity
+              </h1> */}
               <div className="flex justify-center pb-8">
                 <Image
                   src="/Wordmark_wo_TM - White.ai (1).png"
@@ -115,26 +130,16 @@ export default function ModernLandingPage() {
                   height={650} />
               </div>
 
-              <h1 className=" text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl font-extrabold pb-6 max-w-3xl mx-auto text-white leading-relaxed">
-                Overwhelming Complexity to Rapid Clarity
-              </h1>
-              <p className="pb-4 text-center text-lg font-bold max-w-3xl px-12 mx-auto text-white  leading-relaxed">
-                A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
-              </p>
-              <p className="mb-4 text-center text-sm font-bold max-w-3xl px-12 mx-auto text-white  leading-relaxed">
+
+
+              <p className="font-lora mb-4 text-center text-sm  max-w-3xl px-12 mx-auto text-white  leading-relaxed">
                 (Patent Pending Serial No. 63/677,032)</p>
 
             </div>
-            <h2 className="pb-8 max-w-3xl  text-4xl md:text-5xl font-extrabold text-center mx-auto text-white  leading-relaxed">Your ACE to WIN</h2>
+            {/* <h2 className="font-extralight font-roboto pb-8 max-w-3xl  text-4xl md:text-5xl  text-center mx-auto text-white  leading-relaxed">Your ACE to WIN</h2> */}
+
             <div className="flex justify-center space-x-6 mb-4">
-              <Button
-                size="lg"
-                className="shadow-xl  hover:shadow-2xl transition-transform transform hover:scale-105 w-54 text-xl bg-sky-50 hover:bg-sky-100"
-              >
-                <Link href="#demo" className='text-black'>
-                  Request a Demo
-                </Link>
-              </Button>
+
             </div>
 
           </section>
@@ -143,7 +148,14 @@ export default function ModernLandingPage() {
             <div className="container pb-2 mx-auto px-4 relative">
               {/* Image Container */}
               <div className="container pb-2 mx-auto px-4 relative">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold drop-shadow-xl text-black text-left mb-4 pt-8">A.C.E</h2>
+              <h1 className="font-roboto font-extralight pt-8 text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl  pb-6 max-w-3xl mx-auto text-slate-700 leading-relaxed">
+                Overwhelming Complexity to Rapid Clarity
+              </h1>
+              <p className="pb-4 text-center text-lg font-thin max-w-3xl px-12 mx-auto text-black  leading-relaxed">
+                  A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
+                </p>
+              <h2 className="font-extralight font-roboto pb-8 max-w-7xl  text-4xl md:text-5xl  text-left mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
+                
 
 
                 {/* Cards Overlay on Background Image */}
@@ -200,9 +212,9 @@ export default function ModernLandingPage() {
               >
                 <div className="flex flex-wrap items-center justify-around mx-auto px-4 sm:px-8">
                   {[
-                    { imgSrc: '/claims.png', label: 'Claims' },
-                    { imgSrc: '/contracts.png', label: 'Contracts' },
-                    { imgSrc: '/risk.png', label: 'Risk' },
+                    { imgSrc: '/claims2.png', label: 'Claims' },
+                    { imgSrc: '/contract2.png', label: 'Contracts' },
+                    { imgSrc: '/risk2.png', label: 'Risk' },
                   ].map((item, index) => (
                     <div key={index} className="flex flex-col items-center mb-4 sm:mb-2">
                       <Image
@@ -351,7 +363,7 @@ export default function ModernLandingPage() {
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
-                    <Button type="submit" size="lg" className="w-full bg-greenback hover:bg-lime-500 text-white py-3 rounded-lg">
+                    <Button type="submit" size="lg" className="w-full bg-blueback hover:bg-blue-900 text-white py-3 rounded-lg">
                       Request a Demo
                     </Button>
                   </form>
