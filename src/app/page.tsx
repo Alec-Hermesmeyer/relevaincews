@@ -212,9 +212,9 @@ export default function ModernLandingPage() {
               >
                 <div className="flex flex-wrap items-center justify-around mx-auto px-4 sm:px-8">
                   {[
-                    { imgSrc: '/claims2.png', label: 'Claims' },
-                    { imgSrc: '/contract2.png', label: 'Contracts' },
-                    { imgSrc: '/risk2.png', label: 'Risk' },
+                    { imgSrc: '/claims.png', label: 'Claims' },
+                    { imgSrc: '/contracts.png', label: 'Contracts' },
+                    { imgSrc: '/risk.png', label: 'Risk' },
                   ].map((item, index) => (
                     <div key={index} className="flex flex-col items-center mb-4 sm:mb-2">
                       <Image
