@@ -215,7 +215,7 @@ export default function ModernLandingPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="mt-8"
+                className="mt-8 pb-6"
               >
                 <div className="flex flex-wrap items-center justify-around mx-auto px-4 sm:px-8">
                   {[
