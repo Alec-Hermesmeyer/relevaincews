@@ -332,8 +332,8 @@ export default function ModernLandingPage() {
                       className="bg-opacity-80 bg-gray-700 px-6 py-16 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300 border-4 border-[#8083a3]"
                     >
                       <div className='flex justify-start items-center'>
-                      <feature.icon className="h-10 w-10 text-greenback mb-4 mr-2 md:mr-4" />
-                      <h3 className="text-xl font-sans font-medium mb-2 text-white">{feature.title} </h3>
+                      <feature.icon className="h-8 w-8 md:h-10 md:w-10 text-greenback mb-4 mr-2 md:mr-4" />
+                      <h3 className="text-md md:text-xl font-sans font-medium mb-2 text-white">{feature.title} </h3>
                       </div>
                       <p className="text-white">
                         {feature.description}
