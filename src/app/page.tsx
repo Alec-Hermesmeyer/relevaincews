@@ -139,7 +139,7 @@ export default function ModernLandingPage() {
                 <p className="pb-6 pt-12 text-center text-lg font-thin max-w-4xl px-12 mx-auto text-black  leading-relaxed">
                   A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
                 </p>
-                <h2 className="font-extralight font-roboto pb-2 max-w-3xl  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
+                <h2 className="font-extralight font-roboto pb-2 max-w-3xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
 
 
 
@@ -195,11 +195,11 @@ export default function ModernLandingPage() {
                 transition={{ duration: 0.5 }}
                 className="mt-8"
               >
-                {/* <div className="flex flex-wrap items-center justify-around mx-auto px-4 sm:px-8">
+                <div className="flex flex-wrap items-center justify-around mx-auto px-4 sm:px-8">
                   {[
-                    { imgSrc: '/claims.png', label: 'Claims' },
-                    { imgSrc: '/contracts.png', label: 'Contracts' },
-                    { imgSrc: '/risk.png', label: 'Risk' },
+                    { imgSrc: '/claimsDark.png', label: 'Claims' },
+                    { imgSrc: '/contractsDark.png', label: 'Contracts' },
+                    { imgSrc: '/riskDark.png', label: 'Risk' },
                   ].map((item, index) => (
                     <div key={index} className="flex flex-col items-center mb-4 sm:mb-2">
                       <Image
@@ -211,7 +211,7 @@ export default function ModernLandingPage() {
                       <p className="text-center text-base sm:text-lg font-bold text-black mt-2">{item.label}</p>
                     </div>
                   ))}
-                </div> */}
+                </div>
               </motion.div>
             </div>
           </section>
@@ -225,7 +225,7 @@ export default function ModernLandingPage() {
               ></div>
             </div>
             <div className="container mx-auto px-4">
-              <h2 className="text-4xl md:text-5xl sm:text-3xl font-extrabold drop-shadow-xl text-white mb-12 ">How We Changed The Game</h2>
+              <h2 className="font-roboto text-4xl md:text-5xl sm:text-3xl font-extralight drop-shadow-xl text-white mb-12 ">How We Changed The Game</h2>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
                 {/* <!-- Scale Learning --> */}
@@ -273,7 +273,7 @@ export default function ModernLandingPage() {
 
           <section id="features" className="relative py-24 bg-greenback">
             <div className="container mx-auto px-4 relative">
-              <h2 className=" text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extrabold text-left mb-4 pt-4">Key Features</h2>
+              <h2 className=" text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-left mb-4 pt-4">Key Features</h2>
 
               {/* Cards Overlay on Background Image */}
               <div
@@ -328,7 +328,7 @@ export default function ModernLandingPage() {
           <section id="demo" className="relative py-24 bg-blueback text-white">
             <div className="container mx-auto px-4">
               <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl font-extrabold mb-6">Experience the Future with a Personalized Demo</h2>
+                <h2 className="text-4xl md:text-5xl font-extralight font-roboto mb-6">Experience the Future with a Personalized Demo</h2>
                 <p className="text-lg mb-8">
                   Unlock the power of AI-driven insights and revolutionize your workflow. Let us show you how!
                 </p>
