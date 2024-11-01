@@ -112,7 +112,7 @@ export default function ModernLandingPage() {
             {/* Clip-path Div */}
             <div className="absolute w-full inset-x-0 -bottom-3 left-28 z-0 px-24">
               <div
-                className="w-full h-60 bg-gray-50"
+                className="w-full h-60 bg-gray-100"
                 style={{ clipPath: "polygon(100% 0, 100% 100%,10% 100%)" }}
               ></div>
             </div>
@@ -137,25 +137,25 @@ export default function ModernLandingPage() {
 
             </div>
             {/* <h2 className="font-extralight font-roboto pb-8 max-w-3xl  text-4xl md:text-5xl  text-center mx-auto text-white  leading-relaxed">Your ACE to WIN</h2> */}
-
+            <h1 className="font-roboto font-extralight pt-12 text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl  max-w-3xl mx-auto text-slate-100 leading-relaxed">
+              Overwhelming Complexity to Rapid Clarity
+            </h1>
             <div className="flex justify-center space-x-6 mb-4">
 
             </div>
 
           </section>
 
-          <section id="ace" className="relative py-2 bg-gray-50 h-auto">
+          <section id="ace" className="relative py-2 bg-gray-100 h-auto">
             <div className="container pb-2 mx-auto px-4 relative">
               {/* Image Container */}
               <div className="container pb-2 mx-auto px-4 relative">
-              <h1 className="font-roboto font-extralight pt-8 text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl  pb-6 max-w-3xl mx-auto text-slate-700 leading-relaxed">
-                Overwhelming Complexity to Rapid Clarity
-              </h1>
-              <p className="pb-4 text-center text-lg font-thin max-w-3xl px-12 mx-auto text-black  leading-relaxed">
+
+                <p className="py-6 text-center text-lg font-thin max-w-3xl px-12 mx-auto text-black  leading-relaxed">
                   A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
                 </p>
-              <h2 className="font-extralight font-roboto pb-8 max-w-7xl  text-4xl md:text-5xl  text-left mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
-                
+                <h2 className="font-extralight font-roboto pb-8 max-w-7xl  text-4xl md:text-5xl  text-left mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
+
 
 
                 {/* Cards Overlay on Background Image */}
