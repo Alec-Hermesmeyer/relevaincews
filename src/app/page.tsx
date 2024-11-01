@@ -220,7 +220,7 @@ export default function ModernLandingPage() {
           <section className="py-24 relative bg-blueback">
             <div className="absolute w-full inset-x-0 -bottom-4 left-0 z-0  sm:-bottom-4 md:-bottom-2 lg:-bottom-6">
               <div
-                className="w-full h-36 sm:h-32 md:h-40 lg:h-48 bg-greenback"
+                className="w-full h-36 sm:h-32 md:h-40 lg:h-48 bg-slate-200"
                 style={{ clipPath: "polygon(50% 0, 100% 100%, 0 100%)" }}
               ></div>
             </div>
@@ -271,9 +271,9 @@ export default function ModernLandingPage() {
 
 
 
-          <section id="features" className="relative py-24 bg-greenback mb-0 mt-0 sm:-mt-2 md:-mt-2 lg:mt-0">
+          <section id="features" className="relative py-24 bg-slate-200 mb-0 mt-0 sm:-mt-2 md:-mt-2 lg:mt-0">
             <div className="container mx-auto px-4 relative">
-              <h2 className="text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-left mb-4 pt-4">
+              <h2 className="text-black text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-left mb-4 pt-4">
                 Key Features
               </h2>
 
@@ -281,7 +281,7 @@ export default function ModernLandingPage() {
               <div
                 className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-2 lg:py-12 md:py-8"
                 style={{
-                  backgroundImage: "url('/LogoDarkBlue.png')",
+                  backgroundImage: "url('/LogoLimeGreen.png')",
                   backgroundSize: "contain",
                 }}
               >
@@ -311,7 +311,7 @@ export default function ModernLandingPage() {
                       className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300"
                     >
                       <feature.icon className="h-12 w-12 text-white mb-4" />
-                      <h3 className="text-xl font-bold mb-2 text-white">{feature.title}</h3>
+                      <h3 className="text-xl font-roboto font-bold mb-2 text-white">{feature.title}</h3>
                       <p className="text-white">
                         {feature.description}
                       </p>
@@ -324,7 +324,7 @@ export default function ModernLandingPage() {
             {/* Bottom Clipped Background */}
             <div className="absolute w-full inset-x-0 -bottom-28 sm:-bottom-32 md:-bottom-44 lg:-bottom-48 z-10">
               <div
-                className="w-full h-32 sm:h-48 md:h-48 lg:h-52 bg-greenback"
+                className="w-full h-32 sm:h-48 md:h-48 lg:h-52 bg-slate-200"
                 style={{ clipPath: "polygon(50% 100%, 0 0, 100% 0)" }}
               ></div>
             </div>
