@@ -401,15 +401,16 @@ export default function ModernLandingPage() {
 
         </main>
         <footer className="bg-gray-800  py-8">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row justify-center items-center">
-              <p className="text-sm text-white mb-4 md:mb-0 text-center">
+          <div className="container mx-auto px-2">
+            <div className="flex flex-col md:flex-row justify-end items-center">
+              <p className="text-sm text-white mb-4 md:mb-0 text-right">
                 RelevAInce is a registered trademark of RelevAInce LLC (US Serial No. 98/165,416) © 2024 relevAInce All rights reserved.
               </p>
 
             </div>
           </div>
         </footer>
-      </div></>
+      </div>
+      </>
   )
 }
