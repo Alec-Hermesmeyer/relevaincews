@@ -306,7 +306,7 @@ export default function ModernLandingPage() {
                   backgroundSize: "contain",
                 }}
               >
-                <div className="grid gap-8 md:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-4 md:px-0 z-10">
+                <div className="grid gap-2 sm:gap-4 md:gap-8 lg:gap-6 md:grid-cols-1 lg:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-6 md:pr-4 z-10">
                   {[
                     {
                       icon: Sparkles,
@@ -329,9 +329,9 @@ export default function ModernLandingPage() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="bg-opacity-80 bg-gray-700 px-6 py-16 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300 border-4 border-[#8083a3]"
+                      className="bg-opacity-80 bg-gray-700 px-6 w-full py-16 rounded-lg shadow-lg m-4 transform hover:-translate-y-2 transition duration-300 border-4 border-[#8083a3]"
                     >
-                      <div className='flex justify-start items-center'>
+                      <div className='flex justify-start items-center mb-2'>
                       <feature.icon className="h-8 w-8 md:h-10 md:w-10 text-greenback mb-4 mr-2 md:mr-4" />
                       <h3 className="text-md md:text-xl font-sans font-medium mb-2 text-white">{feature.title} </h3>
                       </div>
@@ -362,7 +362,7 @@ export default function ModernLandingPage() {
           <section id="demo" className="relative py-20 bg-blueback text-white">
 
             <div className="container relative mx-auto  px-4 z-10">
-              <div className="max-w-7xl mx-auto text-center pt-8 sm:pt-8 md:pt-28 lg:pt-32">
+              <div className="max-w-7xl mx-auto text-center pt-28 sm:pt-28 md:pt-44 lg:pt-52">
                 <h2 className="text-4xl md:text-5xl font-extralight font-roboto mb-6 z-20 drop-shadow-2xl">
                   Experience the Future with a Personalized Demo
                 </h2>
