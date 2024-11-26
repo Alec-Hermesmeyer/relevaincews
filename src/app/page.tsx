@@ -145,7 +145,7 @@ export default function ModernLandingPage() {
             </div>
 
             <h1 className="font-roboto font-extralight pt-12 text-center text-2xl drop-shadow-2xl md:text-4xl sm:text-2xl  max-w-3xl mx-auto text-[#8083a3] leading-relaxed">
-              Overwhelming Complexity to Rapid Clarity
+              Unlock Your Competitve Advantage
             </h1>
             <div className="flex justify-center space-x-6 mb-4">
 
@@ -158,10 +158,15 @@ export default function ModernLandingPage() {
               {/* Image Container */}
               <div className="container pb-2 mx-auto px-4 relative">
 
-                <p className="pb-6 pt-12 text-center text-lg font-thin px-2 md:px-12 mx-auto text-black  leading-relaxed">
-                  A unique software platform for gleaning truth and leveraging insight with staggering quantities of data at remarkable speed.
+               <div className="flex items-center justify-center">
+               <p className="pb-6 pt-12 text-lg font-thin px-2 md:px-12 mx-auto text-black  leading-relaxed">
+                  Our unique platform empowers AI agents, which act as your researchers, to ingest and learn from your securely uploaded datasets, enabling you to interface with these researchers in a matter of seconds.  
+                  <br /><br/>Imagine the possibilities – the ability to chat with a task-oriented researcher that possess perfect knowledge of your dataset so that you can establish a clear course for your case, for example, conduct your desired analysis, and determine your overall strategy, direction, and mitigation or risk assessment within hours. 
+                   <br /><br />Whether you&apos;re navigating the complexities of the legal landscape or seeking to optimize operations in any industry, leveraged gain with the RelevAInce platform puts the power of the data at your fingertips with clarity, precision, and a clear roadmap.  
+                  <br /> <br />No longer will you be buried in data.  No longer will you be overwhelmed with analysis paralysis.  No longer will you be swamped with information overload.  The competitive advantages are endless.
                 </p>
-                <h2 className="font-extralight font-roboto  max-w-3xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Your ACE to WIN</h2>
+               </div>
+                <h2 className="font-extralight font-roboto  max-w-7xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Join RelevAInce and Gain Your ACE to Win</h2>
 
 
 
@@ -178,12 +183,12 @@ export default function ModernLandingPage() {
                       {
                         icon: Sparkles,
                         title: "Accelerate",
-                        description: "RelevAInce allows the user to quickly and efficiently ingest (intake and learn) intricate and large datasets (e.g. terabytes, millions of files).",
+                        description: "RelevAInce allows the user to quickly and efficiently ingest (intake and learn) large datasets (e.g. terabytes, millions of files).",
                       },
                       {
                         icon: Brain,
                         title: "Clarity",
-                        description: "The user may then obtain results by chatting with task-oriented AI agents that have perfect knowledge of the dataset to distill complex information into accurate and clear responses within seconds, while providing accessible citations, links, and references.",
+                        description: "The user may chat with task-oriented AI agents that have perfect knowledge of the dataset to distill complex information into accurate and clear responses within seconds, while providing accessible citations, links, and references.",
                       },
                       {
                         icon: Shield,
@@ -202,7 +207,7 @@ export default function ModernLandingPage() {
                           <CardHeader>
                             <CardTitle className="text-xl sm:text-2xl font-sans font-thin text-white">{feature.title}</CardTitle>
                           </CardHeader>
-                          <CardContent className="text-sm leading-relaxed text-white flex-grow">{feature.description}</CardContent>
+                          <CardContent className="text-md leading-relaxed text-white flex-grow">{feature.description}</CardContent>
                         </Card>
                       </motion.div>
                     ))}
@@ -237,7 +242,31 @@ export default function ModernLandingPage() {
               </motion.div>
             </div>
           </section>
+          <section id="our-story" className="relative py-20 bg-slate-200 text-gray-800">
+              <div className="container mx-auto px-4 relative">
+                <h2 className="text-black text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-center mb-6">
+                <small>Solving Legal Inefficiencies, One Insight at a Time:<br /> The Story Behind RelevAInce</small>
+                </h2>
+                <div className="max-w-4xl mx-auto text-lg leading-relaxed">
+                  <p className="mb-6">
+                    This company was started by two friends – one who has been in the legal industry for 40 years (gasp) and one who has been in big data and AI for about the same amount of time. And yes, we know what you&apos;re probably thinking – two old guys are starting a new company, which is exactly what we did!
+                  </p>
+                  <p className="mb-6">
+                    After 40 years in the legal industry, I had seen my fair share of exorbitant legal bills . . . especially after I moved to in-house counsel for a large commercial construction company. Frustrated by the lack of cost-effective solutions, I shared my tale of woe with my long-time friend over a nice steak dinner one night and we decided to stop complaining and combine our expertise and tackle this problem head-on.
+                  </p>
+                  <p className="mb-6">
+                    Thus, RelevAInce was born - a platform designed to streamline data analysis and drive actionable insights, not just for the legal industry, but across other industry sectors.
+                  </p>
+                  <p className="mb-6">
+                    Our mission is to empower organizations of all sizes to make informed decisions quickly and cost-effectively. No longer will you be buried in data. No longer will you be overwhelmed with analysis paralysis. No longer will you be swamped with information overload.
+                  </p>
+                  <p className="mb-6">
+                    The competitive advantages are endless. Whether you&apos;re navigating the complexities of the legal landscape or seeking to optimize operations in any industry, RelevAInce is your partner in unlocking the power of data-driven insights.
+                  </p>
+                </div>
+              </div>
 
+          </section>
 
           <section className="py-24 relative bg-blueback">
             <div className="absolute w-full inset-x-0 -bottom-4 left-0 z-0  sm:-bottom-4 md:-bottom-2 lg:-bottom-6">
@@ -332,8 +361,8 @@ export default function ModernLandingPage() {
                       className="bg-opacity-80 bg-gray-700 px-6 w-full py-16 rounded-lg shadow-lg m-0 transform hover:-translate-y-2 transition duration-300 border-4 border-[#8083a3]"
                     >
                       <div className='flex justify-start items-center mb-2'>
-                      <feature.icon className="h-8 w-8 md:h-10 md:w-10 text-greenback mb-4 mr-2 md:mr-4" />
-                      <h3 className="text-md md:text-xl font-sans font-medium mb-2 text-white">{feature.title} </h3>
+                        <feature.icon className="h-8 w-8 md:h-10 md:w-10 text-greenback mb-4 mr-2 md:mr-4" />
+                        <h3 className="text-md md:text-xl font-sans font-medium mb-2 text-white">{feature.title} </h3>
                       </div>
                       <p className="text-white">
                         {feature.description}
@@ -413,6 +442,6 @@ export default function ModernLandingPage() {
           </div>
         </footer>
       </div>
-      </>
+    </>
   )
 }

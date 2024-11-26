@@ -5,7 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --blueback: rgb(16, 39, 94);
+  /* --blueback: rgb(16, 39, 94); */
+  --blueback: #10275E;
   --greenback: #afd41a;
 }
 

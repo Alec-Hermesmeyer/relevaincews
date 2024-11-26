@@ -15,11 +15,11 @@ const BusinessCardPage = () => {
     company: 'YourCompany',
     website: 'https://yourcompany.com',
     linkedin: 'https://linkedin.com/in/johndoe',
-    photoUrl: '/images/john-doe.jpg',
+    // photoUrl: '/../../../public/LogoPurple.png',
   };
 
   // Render the BusinessCard with mock data
-  return <BusinessCard {...cardData} />;
+  return <BusinessCard  {...cardData} />;
 };
 
 export default BusinessCardPage;
