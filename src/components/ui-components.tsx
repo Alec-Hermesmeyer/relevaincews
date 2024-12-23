@@ -2,6 +2,9 @@ import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 import { cn } from "@/libs/utils"
+import * as CollapsiblePrimitive from "@radix-ui/react-collapsible"
+
+
 
 // Button Component
 const buttonVariants = cva(
@@ -188,3 +191,23 @@ export const ScrollArea = React.forwardRef<HTMLDivElement, ScrollAreaProps>(
     }
 )
 ScrollArea.displayName = "ScrollArea"
+
+const Collapsible = CollapsiblePrimitive.Root
+
+const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger
+
+const CollapsibleContent = React.forwardRef<
+  React.ElementRef<typeof CollapsiblePrimitive.CollapsibleContent>,
+  React.ComponentPropsWithoutRef<typeof CollapsiblePrimitive.CollapsibleContent>
+>(({ className, children, ...props }, ref) => (
+  <CollapsiblePrimitive.CollapsibleContent
+    ref={ref}
+    className="data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down overflow-hidden"
+    {...props}
+  >
+    {children}
+  </CollapsiblePrimitive.CollapsibleContent>
+))
+CollapsibleContent.displayName = "CollapsibleContent"
+
+export { Collapsible, CollapsibleTrigger, CollapsibleContent }

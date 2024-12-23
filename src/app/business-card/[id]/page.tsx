@@ -8,9 +8,9 @@ const BusinessCardPage = () => {
   // Example of mock card data
   const cardData = {
     id,
-    name: 'John Doe',
-    title: 'Software Engineer',
-    email: 'john.doe@example.com',
+    name: 'Lisa Zamaludin Henry',
+    title: 'Cheif Administrative Officer',
+    email: 'lisa.henry@relevaince.ai ',
     phone: '+1 234 567 8901',
     company: 'YourCompany',
     website: 'https://yourcompany.com',

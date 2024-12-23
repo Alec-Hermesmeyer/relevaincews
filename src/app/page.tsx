@@ -87,33 +87,7 @@ export default function ModernLandingPage() {
       </Script>
       <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
 
-        <header className={`sticky top-0 z-50 bg-blueback transition-all duration-200 ${isScrolled ? 'bg-blue-700 dark:bg-gray-900/80 backdrop-blur-md shadow-md' : ''}`}>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
-            <Link className="flex items-center justify-center" href="/">
-              <Image src="/LogoPurple.png" alt="LegalAI Pro" width={80} height={80} className="w-20 sm:w-20 md:w-20 lg:w-20" />
-            </Link>
-
-            {/* Hamburger Menu Icon */}
-            <div className="absolute top-10 right-4 md:top-10 lg:top-10 lg:right-16 md:right-16">
-              <Button onClick={toggleMenu} className="text-white focus:outline-none bg-transparent hover:bg-transparent">
-                {isOpen ? (
-                  <XIcon className="h-8 w-8 transition duration-200 cursor-pointer" aria-hidden="true" />
-                ) : (
-                  <MenuIcon className="h-12 w-12 transition duration-200 cursor-pointer" aria-hidden="true" />
-                )}
-              </Button>
-            </div>
-
-            {/* Navigation Links - toggle visibility with transition */}
-            {isOpen && (
-              <nav className="absolute top-6 right-16  md:right-28 md:top-6 lg:top-6 lg:right-28 p-4  transition-transform duration-300 ease-out  scale-95 animate-fade-in">
-                <Button size="sm" className="w-full bg-slate-200 hover:bg-slate-400 text-white py-3 rounded-lg">
-                  <Link href="https://prod.relevaince.ai/" className="block px-4 py-2 text-black">Client Login</Link>
-                </Button>
-              </nav>
-            )}
-          </div>
-        </header>
+       
         <main className="flex-1">
           <section className="relative  pt-24 pb-72 bg-blueback">
             {/* Clip-path Div */}
@@ -139,7 +113,7 @@ export default function ModernLandingPage() {
 
 
 
-              <p className="font-lora mb-4 text-center text-sm  max-w-3xl px-12 mx-auto text-white  leading-relaxed">
+              <p className="font-lora mb-4 text-center text-sm  max-w-3xl px-12 mx-auto text-white  leading-relaxed italic">
                 (Patent Pending Serial No. 63/677,032)</p>
 
             </div>
@@ -242,32 +216,7 @@ export default function ModernLandingPage() {
               </motion.div>
             </div>
           </section>
-          <section id="our-story" className="relative py-20 bg-slate-200 text-gray-800">
-              <div className="container mx-auto px-4 relative">
-                <h2 className="text-black text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-center mb-6">
-                <small>Solving Legal Inefficiencies, One Insight at a Time:<br /> The Story Behind RelevAInce</small>
-                </h2>
-                <div className="max-w-4xl mx-auto text-lg leading-relaxed">
-                  <p className="mb-6">
-                    This company was started by two friends – one who has been in the legal industry for 40 years (gasp) and one who has been in big data and AI for about the same amount of time. And yes, we know what you&apos;re probably thinking – two old guys are starting a new company, which is exactly what we did!
-                  </p>
-                  <p className="mb-6">
-                    After 40 years in the legal industry, I had seen my fair share of exorbitant legal bills . . . especially after I moved to in-house counsel for a large commercial construction company. Frustrated by the lack of cost-effective solutions, I shared my tale of woe with my long-time friend over a nice steak dinner one night and we decided to stop complaining and combine our expertise and tackle this problem head-on.
-                  </p>
-                  <p className="mb-6">
-                    Thus, RelevAInce was born - a platform designed to streamline data analysis and drive actionable insights, not just for the legal industry, but across other industry sectors.
-                  </p>
-                  <p className="mb-6">
-                    Our mission is to empower organizations of all sizes to make informed decisions quickly and cost-effectively. No longer will you be buried in data. No longer will you be overwhelmed with analysis paralysis. No longer will you be swamped with information overload.
-                  </p>
-                  <p className="mb-6">
-                    The competitive advantages are endless. Whether you&apos;re navigating the complexities of the legal landscape or seeking to optimize operations in any industry, RelevAInce is your partner in unlocking the power of data-driven insights.
-                  </p>
-                </div>
-              </div>
-
-          </section>
-
+          
           <section className="py-24 relative bg-blueback">
             <div className="absolute w-full inset-x-0 -bottom-4 left-0 z-0  sm:-bottom-4 md:-bottom-2 lg:-bottom-6">
               <div

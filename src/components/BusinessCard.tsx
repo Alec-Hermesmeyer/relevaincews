@@ -78,57 +78,29 @@ END:VCARD
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 z-30">
-               <span className=" absolute top-44  left-[37%] -z-10  border ">
-               <Image src='/LogoPurple.png' height='740' width="740" alt='alt'  className="overflow-hidden " />
-               </span>
+    <div className="min-h-screen flex items-center justify-center bg-black">
+               
 
       <div
-        className="p-8 border rounded-lg shadow-lg max-w-md w-full h-[65dvh] text-center text-white relative bg-[#10275E] overflow-hidden -z-20"
-        // style={{
-        //   backgroundImage: `url('/LogoPurple.png')`,
-        //   backgroundSize: "cover",
-        //   backgroundPosition: "-40% center", // Off-center the background image
-        //   backgroundColor: "#10275E", // Navy-600 Hex Color as fallback
-        //   backdropFilter: "blur(5px)",
-        // }}
+        className="p-8 ml-2 mr-2  border rounded-lg shadow-lg max-w-md w-full h-[65dvh] text-center text-white relative bg-[#10275E] overflow-hidden "
+        style={{
+           backgroundImage: `url('/LogoPurple.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "-40% center", // Off-center the background image
+          backgroundColor: "#10275E", // Navy-600 Hex Color as fallback
+           backdropFilter: "blur(5px)",
+           backgroundRepeat: "no-repeat",
+         }}
       >
-         <div className=" p-6 rounded-md z-auto">
-          <h2 className="mt-6 text-3xl font-bold ">{name}</h2>
-          <p className="text-xl ">{title}</p>
-          <p className="">{email}</p>
-          <p className=''>{phone}</p>
-          <a
-            href={website}
-            className="block text-blue-300 hover:underline mt-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {company}
-          </a>
-          <a
-            href={linkedin}
-            className="block text-blue-300 hover:underline mt-1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <div className="flex flex-col items-center space-y-4 mt-6">
-            <button
-              onClick={handleSaveContact}
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-            >
-              Save Contact
-            </button>
-            <a
-              href="/path-to-your-wallet-file.pkpass"
-              download
-              className="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-            >
-              Add to Wallet
-            </a>
-          </div>
+        <Image src='/Wordmark_wo_TM - White.ai (1).png' alt={name} height={120} width={200} className="" />
+         <div className=" p-6 rounded-md z-auto absolute bottom-20 right-0">
+          
+          <h2 className="mt-6 text-7xl font-extrabold text-right mb-2 font-roboto ">{name}</h2>
+          <p className="text-xl font-semibold text-right mb-2">{title}</p>
+          <p className="text-xl font-semibold text-right">{email}</p>
+         
+          
+          
         </div>
        
        
