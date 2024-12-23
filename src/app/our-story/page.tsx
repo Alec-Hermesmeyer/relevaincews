@@ -1,14 +1,5 @@
-
-import { motion } from 'framer-motion'
-import { Button, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
-import { Sparkles, Brain, Shield } from "lucide-react"
-import Image from 'next/image'
-
-
-
-
-
-
+import React from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui-components";
 export default function Page() {
   
 

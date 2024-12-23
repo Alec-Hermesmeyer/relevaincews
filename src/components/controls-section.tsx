@@ -11,44 +11,6 @@ interface ControlCategory {
   more: number
 }
 
-const controlCategories: ControlCategory[] = [
-  {
-    title: "Infrastructure security",
-    items: [
-      { title: "Information security for use of cloud services", checked: true },
-      { title: "Information transfer", checked: true },
-      { title: "Use of cryptography", checked: true }
-    ],
-    more: 19
-  },
-  {
-    title: "Organizational security",
-    items: [
-      { title: "Determining the scope of the information security management system", checked: true },
-      { title: "Return of assets", checked: true },
-      { title: "Intellectual property rights", checked: true }
-    ],
-    more: 26
-  },
-  {
-    title: "Product security",
-    items: [
-      { title: "Access to source code", checked: true },
-      { title: "Secure development life cycle", checked: true },
-      { title: "Secure coding", checked: true }
-    ],
-    more: 3
-  },
-  {
-    title: "Internal security procedures",
-    items: [
-      { title: "ICT readiness for business continuity", checked: true },
-      { title: "Information backup", checked: true },
-      { title: "Redundancy of information processing facilities", checked: true }
-    ],
-    more: 52
-  }
-]
 
 export function ControlsSection({ detailed }: { detailed?: boolean }) {
   const controlCategories: ControlCategory[] = [

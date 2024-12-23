@@ -1,101 +1,16 @@
-"use client";
+
 import Image from 'next/image'
 import Link from 'next/link'
-import { Command } from 'lucide-react'
 import { Button } from '@/components/ui-components'
-import { useEffect, useState } from 'react';
+
 
 export default function Page() {
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [status, setStatus] = useState<string | null>(null);
-    const features = [
-        "Analyze vast datasets in seconds.",
-        "Verify and trust AI-generated insights.",
-        "Streamline workflows with actionable intelligence.",
-        "Achieve cognitive reasoning across massive scale."
-      ];
       
-      function AnimatedFeatureLoop() {
-        const [currentIndex, setCurrentIndex] = useState(0);
-      
-        useEffect(() => {
-          const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % features.length);
-          }, 3000); // Change every 3 seconds
-          return () => clearInterval(interval);
-        }, []);
-      
-        return (
-          <div className="text-center my-12">
-            <h2 className="text-4xl font-semibold text-slate-200 mb-4">
-              What RelevAInce Can Do
-            </h2>
-            <div className="relative h-20">
-              <p className="absolute inset-0 flex items-center justify-center text-xl text-slate-200 transition-opacity duration-500">
-                {features[currentIndex]}
-              </p>
-            </div>
-          </div>
-        );
-      }
-    
-
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-    
-        try {
-          const response = await fetch('/api/sendEmail', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email, message }),
-          });
-    
-          if (response.ok) {
-            setStatus('Email sent successfully!');
-            setEmail(''); // Clear the form
-            setMessage(''); // Clear the form
-          } else {
-            setStatus('Error sending email.');
-          }
-        } catch (error) {
-          console.error('Error:', error);
-          setStatus('Error sending email.',);
-        }
-      };
+     
     
   return (
     <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
-      {/* <header className="fixed top-0 left-0 right-0 z-50 bg-white">
-        <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
-          <Link href="/" className="text-2xl font-bold">
-            L
-          </Link>
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/product" className="text-gray-600 hover:text-gray-900">
-              Product
-            </Link>
-            <Link href="/security" className="text-gray-600 hover:text-gray-900">
-              Security
-            </Link>
-            <Link href="/careers" className="text-gray-600 hover:text-gray-900">
-              Careers
-            </Link>
-            <Link href="/customers" className="text-gray-600 hover:text-gray-900">
-              Customers
-            </Link>
-            <Link href="/news" className="text-gray-600 hover:text-gray-900">
-              News
-            </Link>
-            <Button variant="default" className="bg-black text-white hover:bg-black/90">
-              LOGIN
-            </Button>
-          </div>
-        </nav>
-      </header> */}
-
+      
       <main className="">
         {/* Hero Section */}
         <section className="px-6 py-20 md:py-16 max-w-8xl w-full mx-auto grid md:grid-cols-2 gap-12 items-center bg-slate-200 ">
@@ -166,10 +81,10 @@ export default function Page() {
 
     {/* Demo Button */}
     <div className="text-center mt-12">
-      <Link href="/#demo">
+      <Link href="/#demo" className='text-blueback'>
         <Button
           size="lg"
-          className="px-8 py-4 bg-slate-200 hover:bg-slate-300 text-blueback rounded-lg text-lg"
+          className="px-8 py-4 bg-slate-200 hover:bg-slate-300 text-[10275e] rounded-lg text-lg "
         >
           Request a Demo
         </Button>
@@ -185,7 +100,7 @@ export default function Page() {
     </div>
     <div className="text-center mb-6">
         <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-          Gone are the days of being buried in data. Users can finally obtain cognitive reasoning across massive scale in a matter of seconds.
+          Gone are the days of being buried in data. Users can finally obtain cognitive reasoning across very large data sets.
         </p>
       </div>
     {/* Video and Text Section */}

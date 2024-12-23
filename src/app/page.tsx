@@ -1,11 +1,9 @@
 'use client'
 import Script from 'next/script'
 import { useState, useEffect } from 'react'
-import Link from "next/link"
 import { motion } from 'framer-motion'
 import { Button, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
 import { Sparkles, Brain, Shield } from "lucide-react"
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Image from 'next/image'
 
 
@@ -20,9 +18,7 @@ export default function ModernLandingPage() {
   const [status, setStatus] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

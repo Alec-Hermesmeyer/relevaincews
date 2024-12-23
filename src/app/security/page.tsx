@@ -95,9 +95,12 @@ export default function SecurityPage() {
     <div className="min-h-screen bg-slate-200 text-white">
       <div className="max-w-6xl mx-auto px-4 pt-32 pb-20">
         <header className="text-center mb-16">
-          <h1 className="text-3xl font-bold mb-4 text-[#10275E]">Comprehensive Security Controls</h1>
+          <h1 className="text-3xl font-bold mb-4 text-[#10275E]">Comprehensive Security</h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            We've unlocked the key to cognitive A.I. 
+          The security of your documents and data is a top priority.  
+          Relevaince has deployed some of the top data security privacy experts in the nation, 
+          which offers superior protection with advanced measures to maintain the security of your data.  
+          Below are just some of the examples of the multi-layered security techniques we employ to prioritize the integrity of your data. 
           </p>
         </header>
 
