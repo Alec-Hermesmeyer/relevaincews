@@ -15,12 +15,12 @@ export default function Page() {
         {/* Hero Section */}
         <section className="px-6 py-20 md:py-16 max-w-8xl w-full mx-auto grid md:grid-cols-2 gap-12 items-center bg-slate-200 ">
             {/* Clip-path Div */}
-            <div className="absolute w-full inset-x-0 -bottom-12 left-0 z-0 lg:left-0 md:left-28 lg:-bottom-3 md:-bottom-3 ">
+            {/* <div className="absolute w-full inset-x-0 -bottom-12 left-0 z-0 lg:left-0 md:left-28 lg:-bottom-3 md:-bottom-3 sm:bottom-0">
               <div
                 className="w-full h-60 bg-[#10275E] z-0 overflow-hidden"
                 style={{ clipPath: "polygon(100% 0, 100% 100%,10% 100%)" }}
               ></div>
-            </div>
+            </div> */}
           <div className='px-2 sm:px-10 md:px-20 lg:px-20'>
             <div className="text-xl font-medium mb-4"> Our Platform</div>
             <h1 className="text-7xl sm:text-7xl md:text-7xl lg:text-7xl font-semibold mb-6 text-blueback">
