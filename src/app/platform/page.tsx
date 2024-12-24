@@ -100,7 +100,7 @@ export default function Page() {
     </div>
     <div className="text-center mb-6">
         <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-        Gone are the days of being buried in data. Users can finally obtain cognitive reasoning across massive scale in a matter of seconds.
+        Gone are the days of being buried in data. Users can finally obtain cognitive reasoning across very large data sets.
         </p>
       </div>
     {/* Video and Text Section */}

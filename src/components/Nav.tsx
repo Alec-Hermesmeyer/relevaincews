@@ -4,14 +4,28 @@ import Link from "next/link";
 import { Button } from "@/components/ui-components";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  // Close menu on route change
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsOpen(false);
+    };
+
+    router.events.on("routeChangeStart", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [router]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,7 +91,7 @@ const Nav = () => {
             size="sm"
             className="bg-slate-200 hover:bg-slate-400 text-blueback py-2 px-4 rounded-lg border border-[#10275e]"
           >
-            <Link href="https://prod.relevaince.ai/" className="text-blueback">Client Login</Link>
+            <Link href="https://prod.relevaince.ai/">Client Login</Link>
           </Button>
         </nav>
 
@@ -107,7 +121,7 @@ const Nav = () => {
                 size="sm"
                 className="bg-slate-200 hover:bg-slate-400 text-blueback py-2 px-4 rounded-lg border border-[#10275e]"
               >
-                <Link href="https://prod.relevaince.ai/" className="text-blueback">Client Login</Link>
+                <Link href="https://prod.relevaince.ai/">Client Login</Link>
               </Button>
             </div>
           </nav>
