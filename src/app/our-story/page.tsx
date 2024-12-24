@@ -15,16 +15,7 @@ export default function Page() {
           <section className="py-24 relative bg-blueback">
             <div className="container mx-auto px-4 relative">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div className="flex flex-col justify-center py-12">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extralight font-roboto text-white mb-6">
-                        <span className="text-accent">RelevAInce</span> <br /> <span className="text-accent">Our Story</span>
-                    </h1>
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 mb-6 pb-6">
-                        Unlock the power of data-driven insights with RelevAInce.
-                    </p>
-                    </div>
-                    <div className="flex justify-center">
-                    </div>
+                    
                 </div>
             </div>
 
@@ -40,17 +31,15 @@ export default function Page() {
           </section>
           <section id="our-story" className="relative py-20 bg-slate-200 text-gray-800">
               <div className="container mx-auto px-4 relative">
-                <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-extrabold text-blueback font-roboto text-left mb-6">How We Began</h2>
+               
                 <h3 className="text-black text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-center mb-6">
-                <small>Solving Legal Inefficiencies, One Insight at a Time:<br /> The Story Behind RelevAInce</small>
+                <small>The Story Behind RelevAInce:<br /> Solving Legal Inefficiencies, One Insight at a Time</small>
                 </h3>
                 <div className="max-w-4xl mx-auto text-lg leading-relaxed">
                   <p className="mb-6">
-                    This company was started by two friends – one who has been in the legal industry for 40 years (gasp) and one who has been in big data and AI for about the same amount of time. And yes, we know what you&apos;re probably thinking – two old guys are starting a new company, which is exactly what we did!
+                  This idea of Relevaince started over a steak dinner one night between two friends - one who had been in the legal industry for 40 years (gasp) and one who had been in big data and Al for about the same amount of time.  And yes, we know what you're probably thinking - two old guys had an idea about solving an age-old problem of inefficiency in the legal arena with new technology, which is exactly what they did!
                   </p>
-                  <p className="mb-6">
-                    After 40 years in the legal industry, I had seen my fair share of exorbitant legal bills . . . especially after I moved to in-house counsel for a large commercial construction company. Frustrated by the lack of cost-effective solutions, I shared my tale of woe with my long-time friend over a nice steak dinner one night and we decided to stop complaining and combine our expertise and tackle this problem head-on.
-                  </p>
+                  
                   <p className="mb-6">
                     Thus, RelevAInce was born - a platform designed to streamline data analysis and drive actionable insights, not just for the legal industry, but across other industry sectors.
                   </p>
@@ -90,10 +79,8 @@ export default function Page() {
 
           <section id="demo" className="relative py-32 bg-blueback text-white">
   <div className="container mx-auto px-4">
-    <h2 className="text-left text-slate-200 text-4xl md:text-5xl font-semibold mb-12">
-      Who We Are
-    </h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
       
       {/* Victor Nilson */}
       <Card className="bg-slate-200 text-gray-800">

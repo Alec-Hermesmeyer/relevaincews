@@ -81,14 +81,14 @@ export default function Page() {
 
     {/* Demo Button */}
     <div className="text-center mt-12">
-      <Link href="/#demo" className='text-blueback'>
+      
         <Button
           size="lg"
           className="px-8 py-4 bg-slate-200 hover:bg-slate-300 text-[10275e] rounded-lg text-lg "
         >
-          Request a Demo
+         <Link href="/#demo" className='text-blueback'> Request a Demo</Link>
         </Button>
-      </Link>
+      
     </div>
   </div>
 </section>
@@ -100,7 +100,7 @@ export default function Page() {
     </div>
     <div className="text-center mb-6">
         <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-          Gone are the days of being buried in data. Users can finally obtain cognitive reasoning across very large data sets.
+        Gone are the days of being buried in data. Users can finally obtain cognitive reasoning across massive scale in a matter of seconds.
         </p>
       </div>
     {/* Video and Text Section */}

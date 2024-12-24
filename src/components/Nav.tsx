@@ -77,7 +77,7 @@ const Nav = () => {
             size="sm"
             className="bg-slate-200 hover:bg-slate-400 text-blueback py-2 px-4 rounded-lg border border-[#10275e]"
           >
-            <Link href="https://prod.relevaince.ai/">Client Login</Link>
+            <Link href="https://prod.relevaince.ai/" className="text-blueback">Client Login</Link>
           </Button>
         </nav>
 
