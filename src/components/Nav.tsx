@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui-components";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
@@ -8,6 +9,7 @@ import Image from "next/image";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname(); // Use to track current path
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -17,9 +19,18 @@ const Nav = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
+
+    const closeMenuOnRouteChange = () => {
+      setIsOpen(false); // Close menu when the path changes
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    closeMenuOnRouteChange(); // Close the menu initially when the component renders
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [pathname]); // Run effect whenever the route changes
 
   return (
     <header
