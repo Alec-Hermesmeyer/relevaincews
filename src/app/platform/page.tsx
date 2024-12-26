@@ -66,13 +66,13 @@ export default function Page() {
     <div className="flex flex-col gap-12">
       <div className="relative">
         <video
-          className="w-full max-w-5xl mx-auto rounded-lg shadow-lg"
+          className="w-full max-w-lg mx-auto  drop-shadow-lg px-10"
           muted
           loop
           autoPlay
           playsInline
         >
-          <source src="/cognitive.mp4" type="video/mp4" />
+          <source src="/Trust.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -107,13 +107,13 @@ export default function Page() {
     <div className="flex flex-col gap-12">
       <div className="relative">
         <video
-          className="w-full max-w-5xl mx-auto rounded-lg shadow-lg"
+          className="w-full max-w-lg mx-auto  drop-shadow-lg  px-10"
           muted
           loop
           autoPlay
           playsInline
         >
-          <source src="/verify.mp4" type="video/mp4" />
+          <source src="/Cr (1).mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
