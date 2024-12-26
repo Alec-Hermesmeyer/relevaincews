@@ -72,7 +72,7 @@ export default function Page() {
           autoPlay
           playsInline
         >
-          <source src="/verify.mp4" type="video/mp4" />
+          <source src="/cognitive.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -113,7 +113,7 @@ export default function Page() {
           autoPlay
           playsInline
         >
-          <source src="/cognitive.mp4" type="video/mp4" />
+          <source src="/verify.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

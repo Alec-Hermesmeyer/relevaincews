@@ -97,7 +97,9 @@ export default function Page() {
         </CardHeader>
         <CardContent>
           <p>
-            Victor Nilson has spent his career helping businesses utilize disruptive technology at scale, including senior leadership roles at Sabre, Cingular, and AT&T. He leads Relevaince into the revolutionary world of cognitive AI and agentics. Victor holds an MBA from Southern Methodist University.
+          Victor Nilson is a Founder and CEO at Relevaince.  He has dedicated his career to helping businesses utilize disruptive technology, deployed at scale, to harvest significant benefits.  
+          Victor has held senior leadership roles with Sabre, Cingular and AT&T. His lifelong engagement and extensive experience with cutting edge technologies have positioned him perfectly to 
+          lead Relevaince in the revolutionary development of cognitive AI and agentics.  Victor earned a MBA at Southern Methodist University.
           </p>
           <p className="mt-2">
             When not working, Victor enjoys traveling with his family and immersing himself in captivating books and informative texts.
