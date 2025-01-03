@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Button, Card, CardHeader, CardTitle, CardContent } from "@/components/ui-components"
 import { Sparkles, Brain, Shield } from "lucide-react"
+import CookieConsent from "@/components/CookieConsent";
 import Image from 'next/image'
 
 
@@ -17,6 +18,7 @@ export default function ModernLandingPage() {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [cookieConsent, setCookieConsent] = useState<boolean | null>(null);
 
   
 
@@ -53,37 +55,45 @@ export default function ModernLandingPage() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const consent = localStorage.getItem("cookieConsent");
+    if (consent === "true") {
+      setCookieConsent(true);
+    } else if (consent === "false") {
+      setCookieConsent(false);
+    } else {
+      setCookieConsent(null); // No consent given yet
+    }
+  }, []);
 
   return (
     <>
-      <Script
-        id="google-tag-manager"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+    {cookieConsent && (
+      <><Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-NHXXZPWS');
           `,
-        }}
-      />
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-3KSD3V3WEX"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
+          }} /><Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-3KSD3V3WEX"
+            strategy="afterInteractive" /><Script id="google-analytics" strategy="afterInteractive">
+            {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-3KSD3V3WEX');
         `}
-      </Script>
+          </Script></>
+      )}
       <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
 
-       
+      {cookieConsent === null && <CookieConsent />}
         <main className="flex-1">
           <section className="relative  pt-24 pb-72 bg-blueback">
             {/* Clip-path Div */}
