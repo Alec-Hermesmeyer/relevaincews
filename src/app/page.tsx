@@ -390,7 +390,7 @@ export default function ModernLandingPage() {
           <div className="container mx-auto px-2">
             <div className="flex flex-col md:flex-row justify-center items-center">
               <p className="text-sm text-white mb-4 md:mb-0 text-center">
-                 © 2024 relevAInce All rights reserved.
+                 © 2025 relevAInce All rights reserved.
               </p>
 
             </div>
