@@ -127,8 +127,8 @@ export default function SecurityPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {sections.map((section, index) => (
-                <div key={index} className="bg-gray-800/50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                  <h3 className="text-md font-bold text-white mb-2">{section.title}</h3>
+                <div key={index} className="bg-gray-700 bg-opacity-80 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                  <h3 className="text-md  text-white mb-2">{section.title}</h3>
                   <p className="text-sm text-slate-200">
                     {section.details.map((detail, idx) => (
                       <span key={idx}>{detail.heading}{idx < section.details.length - 1 ? ', ' : '.'}</span>
@@ -147,8 +147,8 @@ export default function SecurityPage() {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {section.details.map((detail, index) => (
-                  <div key={index} className="bg-gray-800/50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-md font-bold text-white mb-2">{detail.heading}</h3>
+                  <div key={index} className="bg-gray-700 bg-opacity-80 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <h3 className="text-md  text-white mb-2">{detail.heading}</h3>
                     <p className="text-sm text-slate-200">{detail.description}</p>
                   </div>
                 ))}

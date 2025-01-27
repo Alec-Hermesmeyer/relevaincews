@@ -66,12 +66,12 @@ const Nav = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
-          {/* <Link
+          <Link
             href="/platform"
             className="text-white px-4 py-2 rounded-md hover:bg-white hover:text-blueback transition"
           >
             Platform
-          </Link> */}
+          </Link>
           <Link
             href="/security"
             className="text-white px-4 py-2 rounded-md hover:bg-white hover:text-blueback transition"
@@ -96,12 +96,12 @@ const Nav = () => {
         {isOpen && (
           <nav className="absolute top-16 left-0 w-full bg-blueback shadow-md rounded-b-lg py-4 mt-4 md:hidden">
             <div className="flex flex-col items-center space-y-4">
-              {/* <Link
+              <Link
                 href="/platform"
                 className="block text-white px-4 py-2 rounded-md hover:bg-white hover:text-blueback transition"
               >
                 Platform
-              </Link> */}
+              </Link>
               <Link
                 href="/security"
                 className="block text-white px-4 py-2 rounded-md hover:bg-white hover:text-blueback transition"
