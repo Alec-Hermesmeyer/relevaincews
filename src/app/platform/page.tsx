@@ -10,7 +10,7 @@ export default function Page() {
           className="relative px-20 py-20 md:py-20 max-w-8xl w-full mx-auto bg-slate-200 flex items-center justify-center text-center bg-contain bg-no-repeat bg-center"
           style={{ backgroundImage: "url('/LogoPurple.png')" }}
         >
-          <div className="relative z-10 p-10 text-left">
+          <div className="relative z-10 p-10 text-center">
             <div className="text-xl font-medium text-white mb-4" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}>
               Our Platform
             </div>
