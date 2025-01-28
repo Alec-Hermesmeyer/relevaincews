@@ -23,7 +23,7 @@ export default function Page() {
                   height={850} />
               </div>
             <p
-              className="text-white text-2xl mb-8 max-w-5xl font-semibold mx-auto"
+              className="text-white text-lg mb-8 max-w-5xl  mx-auto"
               style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}
             >
               A platform that has finally unlocked the key...cognitive reasoning across massive scale.  A platform that provides sophisticated reasoning, where you can quickly and easily understand causal relationships, obtain an independent semantic understanding of the issues, and obtain the most relevant answers with verifiable data and documentation that you can trust AND verify.  <br></br><br></br>The benefits, just to name a few: 
