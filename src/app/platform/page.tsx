@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui-components'
+import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -11,20 +12,21 @@ export default function Page() {
           style={{ backgroundImage: "url('/LogoPurple.png')" }}
         >
           <div className="relative z-10 p-10 text-center">
-            <div className="text-xl font-medium text-white mb-4" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}>
-              Our Platform
+            <div className="text-xl font-medium text-white mb-4">
+             
             </div>
-            <h1
-              className="text-7xl font-semibold mb-6 text-white"
-              style={{ textShadow: '4px 4px 8px rgba(0, 0, 0, 1)' }}
-            >
-              RelevAInce
-            </h1>
+            <div className="flex justify-center pb-8">
+                <Image
+                  src="/Wordmark_wo_TM - White.ai (1).png"
+                  alt="LegalAI Pro"
+                  width={850}
+                  height={850} />
+              </div>
             <p
-              className="text-white text-2xl mb-8 max-w-lg font-semibold mx-auto"
+              className="text-white text-2xl mb-8 max-w-5xl font-semibold mx-auto"
               style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}
             >
-              A platform that has finally unlocked the key...
+              A platform that has finally unlocked the key...cognitive reasoning across massive scale.  A platform that provides sophisticated reasoning, where you can quickly and easily understand causal relationships, obtain an independent semantic understanding of the issues, and obtain the most relevant answers with verifiable data and documentation that you can trust AND verify.  <br></br><br></br>The benefits, just to name a few: 
             </p>
           </div>
 
@@ -36,8 +38,9 @@ export default function Page() {
           <div className="w-full mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-semibold mb-12">Cognitive Reasoning</h2>
             <p className="text-xl max-w-3xl mx-auto mb-6">
-              Whether you want to level the playing field or find the needle in the haystack… the RelevAInce Platform assists you in actively interpreting and reasoning through data to help make a more informed decision.
-            </p>
+  Whether you want to level the playing field or find the needle in the haystack… the <i>RelevAInce Platform</i>™ assists you in actively interpreting and reasoning through data to help make a more informed decision.
+</p>
+
             <div className="grid gap-8 sm:gap-8 md:gap-8 lg:gap-6 md:grid-cols-1 lg:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-6 md:px-4 z-10">
               <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
                 <h3 className="text-2xl font-sans font-thin text-white mb-2">Decision Making</h3>
@@ -45,7 +48,7 @@ export default function Page() {
               </div>
               <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
                 <h3 className="text-2xl font-sans font-thin text-white mb-2">Data Understanding</h3>
-                <p className="text-white">Gain deeper insights into complex data sets.</p>
+                <p className="text-white">Gain deeper analysis into complex data sets.</p>
               </div>
               <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
                 <h3 className="text-2xl font-sans font-thin text-white mb-2">Problem Solving</h3>
@@ -60,7 +63,7 @@ export default function Page() {
           <div className="w-full mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-semibold mb-12">Trust And Verify</h2>
             <p className="text-xl max-w-3xl mx-auto mb-6 text-gray-700">
-              In obtaining the bottom line answers to your questions as you sift through your data, the RelevAInce Platform provides you with verifiable documentation so that you can Trust AND Verify your conclusions.
+              In obtaining the bottom line answers to your questions as you sift through your data, the <i>RelevAInce Platform</i>™ provides you with verifiable documentation so that you can Trust AND Verify your conclusions.
             </p>
             <div className="grid gap-8 sm:gap-8 md:gap-8 lg:gap-6 md:grid-cols-1 lg:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-6 md:px-4 z-10">
               <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
