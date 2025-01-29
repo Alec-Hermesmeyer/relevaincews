@@ -146,7 +146,7 @@ export default function ModernLandingPage() {
                   <br /> <br />No longer will you be buried in data.  No longer will you be overwhelmed with analysis paralysis.  No longer will you be swamped with information overload.  The competitive advantages are endless.
                 </p>
                </div>
-                <h2 className="font-extralight font-roboto  max-w-7xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Join RelevAInce and Gain Your ACE to Win</h2>
+                <h2 className="font-extralight font-roboto  max-w-7xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Join RelevAInce and ACE the competition</h2>
 
 
 
