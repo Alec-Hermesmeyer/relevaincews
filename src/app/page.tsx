@@ -140,7 +140,7 @@ export default function ModernLandingPage() {
 
                <div className="flex items-center justify-center">
                <p className="pb-6 pt-12 text-lg font-thin px-2 md:px-12 mx-auto text-black  leading-relaxed">
-               Finally, a platform that unlocks the key to cognitive reasoning across massive scale.<br></br><br></br>Our unique platform empowers AI agents, which act as your researchers, to ingest and learn from your securely uploaded datasets, enabling you to interface with these researchers in a matter of seconds.  
+               Finally... a platform that unlocks the key to cognitive reasoning across massive scale.<br></br><br></br>Our unique platform empowers AI agents, which act as your researchers, to ingest and learn from your securely uploaded datasets, enabling you to interface with these researchers in a matter of seconds.  
                   <br /><br/>Imagine the possibilities – the ability to chat with a task-oriented researcher that possess perfect knowledge of your dataset so that you can establish a clear course for your case, for example, conduct your desired analysis, and determine your overall strategy, direction, and mitigation or risk assessment within hours. 
                    <br /><br />Whether you&apos;re navigating the complexities of the legal landscape or seeking to optimize operations in any industry, leveraged gain with the RelevAInce platform puts the power of the data at your fingertips with clarity, precision, and a clear roadmap.  
                   <br /> <br />No longer will you be buried in data.  No longer will you be overwhelmed with analysis paralysis.  No longer will you be swamped with information overload.  The competitive advantages are endless.
