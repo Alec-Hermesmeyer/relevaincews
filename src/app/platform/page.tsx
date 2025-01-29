@@ -8,29 +8,25 @@ export default function Page() {
       <main>
         {/* Hero Section */}
         <section
-          className="relative px-20 py-20 md:py-20 max-w-8xl w-full mx-auto bg-slate-200 flex items-center justify-center text-center bg-contain bg-no-repeat bg-center"
+          className="relative px-20 py-20 md:py-20 max-w-8xl w-full mx-auto bg-slate-100 flex items-center justify-center text-center bg-contain bg-no-repeat bg-center"
           style={{ backgroundImage: "url('/LogoPurple.png')" }}
         >
           <div className="relative z-10 p-10 text-center">
-            <div className="text-xl font-medium text-white mb-4">
-
-            </div>
-            <div className="flex justify-center pb-8">
+            <div className="flex justify-center pb-8 mt-2">
               <Image
-                src="/Wordmark_wo_TM - White.ai (1).png"
+                src="/Wordmark_w_TM - Dark Blue Gray.png"
                 alt="LegalAI Pro"
                 width={850}
                 height={850} />
             </div>
             <p
-              className="text-white text-xl mb-8 max-w-5xl  mx-auto"
-              style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}
+              className="text-blueback text-2xl mb-8 max-w-5xl  mx-auto"
+              style={{ textShadow: '2px 2px 4px rgba(255, 255, 255, 1)' }}
             >
-              A platform that has finally unlocked the key...cognitive reasoning across massive scale.  A platform that provides sophisticated reasoning, where you can quickly and easily understand causal relationships, obtain an independent semantic understanding of the issues, and obtain the most relevant answers with verifiable data and documentation that you can trust AND verify.  <br></br><br></br>The benefits, just to name a few:
-            </p>
+Our platform provides sophisticated reasoning that allows you to quickly understand causal relationships and obtain an independent comprehensive understanding of the issues and most relevant answers to your questions with data and documentation that you can trust AND verify.            </p>
           </div>
 
-          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+          
         </section>
 
         {/* Cognitive Reasoning Section */}
@@ -87,7 +83,7 @@ export default function Page() {
                 />
                 <span className="ml-1"><i>Platform</i></span>
               </span>
-              &nbsp;provides you with verifiable documentation so that you can Trust AND Verify your conclusions.
+              &nbsp;provides you with  documentation so that you can trust AND verify your conclusions.
             </p>
 
 
