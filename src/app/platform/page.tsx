@@ -8,26 +8,31 @@ export default function Page() {
       <main>
         {/* Hero Section */}
         <section
-          className="relative px-20 py-20 md:py-20 max-w-8xl w-full mx-auto bg-slate-100 flex items-center justify-center text-center bg-contain bg-no-repeat bg-center"
-          style={{ backgroundImage: "url('/LogoPurple.png')" }}
-        >
-          <div className="relative z-10 p-10 text-center">
-            <div className="flex justify-center pb-8 mt-2">
-              <Image
-                src="/Wordmark_w_TM - Dark Blue Gray.png"
-                alt="LegalAI Pro"
-                width={850}
-                height={850} />
-            </div>
-            <p
-              className="text-blueback text-2xl mb-8 max-w-5xl  mx-auto"
-              style={{ textShadow: '2px 2px 4px rgba(255, 255, 255, 1)' }}
-            >
-Our platform provides sophisticated reasoning that allows you to quickly understand causal relationships and obtain an independent comprehensive understanding of the issues and most relevant answers to your questions with data and documentation that you can trust AND verify.            </p>
-          </div>
+  className="relative px-6 sm:px-10 md:px-20 py-12 sm:py-16 md:py-20 max-w-8xl w-full mx-auto bg-slate-100 flex items-center justify-center text-center bg-cover sm:bg-contain bg-no-repeat bg-center"
+  style={{ backgroundImage: "url('/LogoPurple.png')" }}
+>
+  <div className="relative z-10 p-6 sm:p-10 text-center">
+    {/* Responsive Image Container */}
+    <div className="flex justify-center pb-6 sm:pb-8 mt-2">
+      <Image
+        src="/Wordmark_w_TM - Dark Blue Gray.png"
+        alt="LegalAI Pro"
+        width={850}
+        height={850}
+        className="w-[300px] sm:w-[500px] md:w-[850px] max-w-full h-auto"
+      />
+    </div>
 
-          
-        </section>
+    {/* Responsive Text */}
+    <p
+      className="text-blueback text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-[90%] md:max-w-5xl mx-auto"
+      style={{ textShadow: '2px 2px 4px rgba(255, 255, 255, 1)' }}
+    >
+      Our platform provides sophisticated reasoning that allows you to quickly understand causal relationships and obtain an independent, comprehensive understanding of the issues and most relevant answers to your questions with data and documentation that you can trust AND verify.
+    </p>
+  </div>
+</section>
+
 
         {/* Cognitive Reasoning Section */}
         <section className="px-6 py-20 bg-[#10275E] text-slate-200 text-center">
