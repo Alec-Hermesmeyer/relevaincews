@@ -111,7 +111,7 @@ export default function ModernLandingPage() {
               </h1> */}
               <div className="flex justify-center pb-8">
                 <Image
-                  src="/Wordmark_wo_TM - White.ai (1).png"
+                  src="/Wordmark_w_TM - White.png"
                   alt="LegalAI Pro"
                   width={850}
                   height={850} />
