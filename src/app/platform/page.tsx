@@ -41,13 +41,13 @@ export default function Page() {
               Whether you want to level the playing field or find the needle in the haystack… the
               <span className="inline-flex items-center">
                 <Image
-                  src="/Wordmark_wo_TM - White.ai (1).png"
+                  src="/Wordmark_w_TM - White.png"
                   alt="RelevAInce"
                   width={120}
                   height={50}
                   className="h-auto w-auto"
                 />
-                <span className="ml-1"><i> &nbsp;Platform</i>™ </span>
+                <span className="ml-1"><i> &nbsp;Platform&nbsp;</i> </span>
               </span>
               assists you in actively interpreting and reasoning through data to help make a more informed decision.
             </p>
@@ -85,7 +85,7 @@ export default function Page() {
                   height={50}
                   className="h-auto w-auto"
                 />
-                <span className="ml-1"><i>Platform</i>™</span>
+                <span className="ml-1"><i>Platform</i></span>
               </span>
               &nbsp;provides you with verifiable documentation so that you can Trust AND Verify your conclusions.
             </p>
