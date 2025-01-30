@@ -158,7 +158,7 @@ export default function ModernLandingPage() {
                </div>
                 <h2 className="font-extralight font-roboto  max-w-7xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Join RelevAInce and ACE the competition</h2>
 
-
+   
 
                 {/* Cards Overlay on Background Image */}
                 <div
