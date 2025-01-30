@@ -15,7 +15,7 @@ export default function Page() {
     {/* Responsive Image Container */}
     <div className="flex justify-center pb-6 sm:pb-8 mt-2">
       <Image
-        src="/Wordmark_w_TM - Dark Blue Gray.png"
+        src="/blue.png"
         alt="LegalAI Pro"
         width={850}
         height={850}
