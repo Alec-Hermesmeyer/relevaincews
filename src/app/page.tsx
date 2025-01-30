@@ -111,7 +111,7 @@ export default function ModernLandingPage() {
               </h1> */}
               <div className="flex justify-center pb-8">
                 <Image
-                  src="/Wordmark_w_TM - White.png"
+                  src="/Wordmark_wo_TM - White.ai (1).png"
                   alt="LegalAI Pro"
                   width={850}
                   height={850} />
@@ -140,8 +140,8 @@ export default function ModernLandingPage() {
 
                <div className="flex items-center justify-center">
                <p className="pb-6 pt-12 text-lg font-thin px-2 md:px-12 mx-auto text-black  leading-relaxed">
-               Finally... a platform that unlocks the key to cognitive reasoning across massive scale.<br></br><br></br>
-               Our unique tool empowers AI agents to act as your researchers and rapidly ingest and learn from your securely uploaded datasets. Our unique tool empowers AI agents to act as your researchers and rapidly ingest and learn from your securely uploaded datasets.                   <br /><br/>
+               Finally... a platform that unlocks the key to cognitive reasoning across massive scale.<br></br>
+               Our unique tool empowers AI agents to act as your researchers and rapidly ingest and learn from your securely uploaded datasets. Our unique tool empowers AI agents to act as your researchers and rapidly ingest and learn from your securely uploaded datasets.            
                    <br></br>You can then chat with a task-oriented researcher possessing perfect knowledge of your dataset to establish a clear course for your case, conduct your desired analysis, determine your overall strategy, direction, and mitigation or risk assessment within hours.
                    <br /><br />Whether you&apos;re navigating the complexities of the legal landscape or seeking to optimize operations in any industry, the <span className="inline-flex items-center">
                 <Image
