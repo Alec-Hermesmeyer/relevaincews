@@ -5,8 +5,8 @@ import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAx
 const data = [
   {
     year: "Year 1",
-    "Enterprise Client": 0,
-    "Mid-Tier Client": 0,
+    "Enterprise Client": 1.5,
+    "Mid-Tier Client": 0.7,
     "Small Tier Client": 0,
     total: 0,
   },
