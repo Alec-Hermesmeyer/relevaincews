@@ -450,7 +450,7 @@ export default function Page() {
                 <Handshake className="w-full h-full" />
               </div>
               <h3 className="text-3xl font-bold">Partnerships</h3>
-              <p className="text-lg leading-relaxed">Colleaborate with indurstry leaders to expand outreach</p>
+              <p className="text-lg leading-relaxed">Collaborate with indurstry leaders to expand outreach</p>
             </div>
 
             {/* Demos */}
