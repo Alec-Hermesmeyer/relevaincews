@@ -618,7 +618,7 @@ export default function Page() {
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Lisa Zamaludin Henry</h3>
-                <p className="text-xl text-gray-400">Founder and CAO</p>
+                <p className="text-xl text-gray-400">Co-Founder and CAO</p>
               </div>
             </div>
 
