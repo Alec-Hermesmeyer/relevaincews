@@ -44,7 +44,7 @@ const Nav = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/LogoPurple.png"
+            src="/LogoWhite.png"
             alt="LegalAI Pro"
             width={80}
             height={80}

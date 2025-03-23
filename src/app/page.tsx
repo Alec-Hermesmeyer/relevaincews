@@ -6,6 +6,7 @@ import { Button, Card, CardHeader, CardTitle, CardContent } from "@/components/u
 import { Sparkles, Brain, Shield } from "lucide-react"
 import CookieConsent from "@/components/CookieConsent";
 import Image from 'next/image'
+import AceSection from '@/components/ace-section'
 
 
 
@@ -95,14 +96,14 @@ export default function ModernLandingPage() {
 
       {cookieConsent === null && <CookieConsent />}
         <main className="flex-1">
-          <section className="relative  pt-24 pb-72 bg-blueback">
+          <section className="relative  pt-24 pb-24 bg-blueback">
             {/* Clip-path Div */}
-            <div className="absolute w-full inset-x-0 -bottom-12 left-0 z-0 lg:left-28 md:left-28 lg:-bottom-3 md:-bottom-3">
+            {/* <div className="absolute w-full inset-x-0 -bottom-12 left-0 z-0 lg:left-28 md:left-28 lg:-bottom-3 md:-bottom-3">
               <div
-                className="w-full h-60 bg-slate-200"
+                className="w-full h-60 bg-blueback"
                 style={{ clipPath: "polygon(100% 0, 100% 100%,10% 100%)" }}
               ></div>
-            </div>
+            </div> */}
 
             {/* Content Div */}
             <div className="relative z-10 container mx-auto px-6 md:px-10 lg:px-20">
@@ -133,13 +134,13 @@ export default function ModernLandingPage() {
 
           </section>
 
-          <section id="ace" className="relative py-2 bg-slate-200 h-auto">
-            <div className="container pb-2 mx-auto px-4 relative">
-              {/* Image Container */}
+          <section id="ace" >
+            {/* <div className="container pb-2 mx-auto px-4 relative">
+              Image Container
               <div className="container pb-2 mx-auto px-4 relative">
 
                <div className="flex items-center justify-center">
-               <p className="pb-6 pt-12 text-lg font-thin px-2 md:px-12 mx-auto text-black  leading-relaxed text-center">
+               <p className="pb-6 pt-12 text-lg font-thin px-2 md:px-12 mx-auto text-white  leading-relaxed text-center">
                Finally... a platform that unlocks the key to cognitive reasoning across massive scale.<br></br>
                <br></br>Our unique tool empowers AI agents to act as your researchers and rapidly ingest and learn from your securely uploaded datasets. <br></br>           
                    <br></br>You can then chat with a task-oriented researcher possessing perfect knowledge of your dataset to establish a clear course for your case, conduct your desired analysis, determine your overall strategy, direction, and mitigation or risk assessment within hours.
@@ -156,12 +157,12 @@ export default function ModernLandingPage() {
                   <br /> <br />No longer will you be buried in data.  No longer will you be overwhelmed with analysis paralysis.  No longer will you be swamped with information overload.  The competitive advantages are endless.
                 </p>
                </div>
-                <h2 className="font-extralight font-roboto  max-w-7xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-slate-700  leading-relaxed">Join RelevAInce and ACE the competition</h2>
+                <h2 className="font-extralight font-roboto  max-w-7xl pb-3  text-4xl md:text-5xl  text-center mx-auto text-white  leading-relaxed">Join RelevAInce and ACE the competition</h2> */}
 
    
 
                 {/* Cards Overlay on Background Image */}
-                <div
+                {/* <div
                   className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-8"
                   style={{
                     backgroundImage: "url('/LogoPurple.png')",
@@ -203,34 +204,189 @@ export default function ModernLandingPage() {
                     ))}
                   </div>
                 </div>
-
               </div>
+            </div> */}
+            <section className="px-6 py-6 bg-blueback text-white text-center">
+            {/* <div className="container mx-auto px-6 py-16">
+            <h2 className="text-4xl font-semibold text-white mb-2 text-center">        The AI Analysis and Capabilities you’ve been waiting for
+            </h2>
+            <p className="text-white font-bold text-2xl text-center mb-4">Comprehensive. Rapid. Accurate.</p>
+            <p className="text-white text-lg">
+        More than simple document generation, summary, or pattern recognition.
+      </p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="mt-8 pb-6"
-              >
-                <div className="flex flex-wrap items-center justify-around mx-auto px-4 sm:px-8">
-                  {[
-                    { imgSrc: '/claims3.png', label: 'Claims' },
-                    { imgSrc: '/contracts3.png', label: 'Contracts' },
-                    { imgSrc: '/risk4.png', label: 'Risk' },
-                  ].map((item, index) => (
-                    <div key={index} className="flex flex-col items-center mb-4 sm:mb-2">
-                      <Image
-                        className="h-20 w-20 sm:h-28 sm:w-28 md:h-36 md:w-36"
-                        src={item.imgSrc}
-                        alt={item.label}
-                        width={150}
-                        height={150} />
-                      <p className="text-center text-base sm:text-lg font-bold text-black mt-2">{item.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
+      <p className="text-white mb-4 text-lg">
+        Obtain a value proposition, risk assessment, or an overall strategy that enables you to focus on high-value activities.
+      </p>
+      <h2 className="text-2xl font-semibold text-white">Claims. Risk. Litigation. Contracts.</h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-lg leading-relaxed"> */}
+    
+    {/* Left Column */}
+    {/* <div className="space-y-5 text-center md:text-left">
+      
+      <p className="text-white">
+        More than simple document generation, summary, or pattern recognition.
+      </p>
+      <p className="text-white">
+        Cognitive reasoning at scale—think millions of documents, not just tens of thousands.
+      </p>
+      <p className="text-white">
+        Obtain a value proposition, risk assessment, or an overall strategy that enables you to focus on high-value activities.
+      </p>
+    </div> */}
+
+    {/* Right Column */}
+    {/* <div className="space-y-10 text-center md:text-center  text-white">
+      
+      <p className="text-white">
+        Virtual assistant teams simultaneously assess entire datasets, provide strengths and weaknesses, 
+        and establish your path forward with clarity from the outset.
+      </p>
+    </div> */}
+
+    {/* Centered Call-to-Action */}
+    {/* <div className="col-span-1 md:col-span-2 text-center pt-10">
+      <h3 className="text-xl font-bold text-white uppercase tracking-wide">
+        The Competitive Advantages Are Endless…
+      </h3>
+    </div>
+  </div>
+</div> */}
+<div className="container mx-auto px-6 py-16 bg-gradient-to-b from-gray-900 to-gray-800 rounded-sm">
+  <h2 className="text-4xl font-bold text-white mb-12 text-center">
+    The AI Analysis and Capabilities You've Been Waiting For
+  </h2>
+  
+  {/* Feature Cards Section */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+    <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+      <div className="text-blue-400 text-4xl mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3 className="text-xl font-bold text-white text-center mb-4">Comprehensive</h3>
+      <p className="text-gray-300 text-center">
+        More than simple document generation or pattern recognition—our AI delivers cognitive reasoning at scale.
+      </p>
+    </div>
+    
+    <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+      <div className="text-blue-400 text-4xl mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <h3 className="text-xl font-bold text-white text-center mb-4">Rapid</h3>
+      <p className="text-gray-300 text-center">
+        Process millions of documents simultaneously, providing immediate insights and actionable intelligence.
+      </p>
+    </div>
+    
+    <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+      <div className="text-blue-400 text-4xl mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+        </svg>
+      </div>
+      <h3 className="text-xl font-bold text-white text-center mb-4">Accurate</h3>
+      <p className="text-gray-300 text-center">
+        Obtain precise value propositions, risk assessments, and strategies that enable focus on high-value activities.
+      </p>
+    </div>
+  </div>
+  
+  {/* Use Cases Section */}
+  <div className="bg-blueback bg-opacity-40 p-8 rounded-lg mb-16">
+    <h3 className="text-2xl font-bold text-white text-center mb-6">
+      Claims. Risk. Litigation. Contracts.
+    </h3>
+  </div>
+  
+  {/* CTA Section */}
+  <div className="text-center">
+    <h3 className="text-2xl font-bold text-white uppercase tracking-wide mb-8">
+      The Competitive Advantages Are Endless
+    </h3>
+    <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+      Discover How
+    </button>
+  </div>
+</div>
+
+          {/* <div className="w-full mx-auto px-6">
+            <h2 className="text-4xl md:text-5xl  mb-12">Cognitive Reasoning</h2>
+            <p className="text-xl max-w-3xl mx-auto mb-6">
+              Whether you want to level the playing field or find the needle in the haystack… the
+              <span className="inline-flex items-center">
+                <Image
+                  src="/Wordmark_w_TM - White.png"
+                  alt="RelevAInce"
+                  width={120}
+                  height={50}
+                  className="h-auto w-auto"
+                />
+                <span className="ml-1"><i> &nbsp;Platform&nbsp;</i> </span>
+              </span>
+              assists you in actively interpreting and reasoning through data to help make a more informed decision.
+            </p>
+
+
+
+            <div className="grid gap-8 sm:gap-8 md:gap-8 lg:gap-6 md:grid-cols-1 lg:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-6 md:px-4 z-10">
+              <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                <h3 className="text-2xl font-sans font-thin text-white mb-2">Decision Making</h3>
+                <p className="text-white">Enhance decision making with structured insights.</p>
+              </div>
+              <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                <h3 className="text-2xl font-sans font-thin text-white mb-2">Data Understanding</h3>
+                <p className="text-white">Gain deeper analysis into complex data sets.</p>
+              </div>
+              <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                <h3 className="text-2xl font-sans font-thin text-white mb-2">Problem Solving</h3>
+                <p className="text-white">Analyze and resolve complex information effectively.</p>
+              </div>
             </div>
+          </div> */}
+        </section>
+
+        {/* Trust and Verify Section */}
+        {/* <section className="px-6 py-20 bg-blueback text-center text-blueback">
+          <div className="w-full mx-auto px-6">
+            <h2 className="text-4xl md:text-5xl mb-12 text-white">Trust And Verify</h2>
+            <p className="text-xl max-w-3xl mx-auto mb-6 text-white">
+              In obtaining the bottom line answers to your questions as you sift through your data, the&nbsp;
+              <span className="inline-flex items-center">
+                <Image
+                  src="/Wordmark_w_TM - White.png"
+                  alt="RelevAInce"
+                  width={120}
+                  height={50}
+                  className="h-auto w-auto"
+                />
+                <span className="ml-1"><i>Platform</i></span>
+              </span>
+              &nbsp;provides you with  documentation so that you can trust AND verify your conclusions.
+            </p>
+
+
+            <div className="grid gap-8 sm:gap-8 md:gap-8 lg:gap-6 md:grid-cols-1 lg:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-6 md:px-4 z-10">
+              <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                <h3 className="text-2xl font-sans font-thin text-white mb-2">Credibility</h3>
+                <p className="text-white">Enhance credibility with verifiable data.</p>
+              </div>
+              <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                <h3 className="text-2xl font-sans font-thin text-white mb-2">Resource Allocation</h3>
+                <p className="text-white">Optimize resource allocation efficiently.</p>
+              </div>
+              <div className="bg-opacity-80 bg-gray-700 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300">
+                <h3 className="text-2xl font-sans font-thin text-white mb-2">Decision Making</h3>
+                <p className="text-white">Make informed decisions with confidence.</p>
+              </div>
+            </div>
+          </div>
+        </section> */}
           </section>
           
           <section className="py-24 relative bg-blueback">
@@ -241,7 +397,7 @@ export default function ModernLandingPage() {
               ></div>
             </div>
             <div className="container mx-auto px-4">
-              <h2 className="font-roboto text-4xl md:text-5xl sm:text-3xl font-extralight drop-shadow-xl text-white mb-12 ">How We Changed The Game</h2>
+              <h2 className="font-roboto text-4xl md:text-5xl sm:text-3xl font-extralight drop-shadow-xl text-white mb-12 text-center">How We Change The Game</h2>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
                 {/* <!-- Scale Learning --> */}
@@ -288,55 +444,55 @@ export default function ModernLandingPage() {
 
 
           <section id="features" className="relative py-24 bg-slate-200 mb-0 mt-0 sm:-mt-2 md:-mt-2 lg:mt-0">
-            <div className="container mx-auto px-4 relative">
-              <h2 className="text-black text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-left mb-4 pt-4">
-                Key Features
-              </h2>
-
-              {/* Cards Overlay on Background Image */}
-              <div
-                className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-2" style={{
-                  backgroundImage: "url('/LogoPurple.png')",
-                  backgroundSize: "contain",
-                }}
-              >
-                <div className="grid gap-8 sm:gap-8 md:gap-8 lg:gap-6 md:grid-cols-1 lg:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-6 md:px-4 z-10">
-                  {[
-                    {
-                      icon: Sparkles,
-                      title: "Smart Contract Analysis",
-                      description: "AI-driven contract review and risk assessment in minutes.",
-                    },
-                    {
-                      icon: Brain,
-                      title: "Legal Research Assistant",
-                      description: "Intelligent case law search and analysis for faster insights.",
-                    },
-                    {
-                      icon: Shield,
-                      title: "Risk Analysis",
-                      description: "Automated risk analysis across jurisdictions, identifying threats in real time.",
-                    },
-                  ].map((feature, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="bg-opacity-80 bg-gray-700 px-6 w-full py-16 rounded-lg shadow-lg m-0 transform hover:-translate-y-2 transition duration-300 border-4 border-[#8083a3]"
-                    >
-                      <div className='flex justify-start items-center mb-2'>
-                        <feature.icon className="h-8 w-8 md:h-10 md:w-10 text-greenback mb-4 mr-2 md:mr-4" />
-                        <h3 className="text-md md:text-xl font-sans font-medium mb-2 text-white">{feature.title} </h3>
-                      </div>
-                      <p className="text-white">
-                        {feature.description}
-                      </p>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
+  <div className="container mx-auto px-4 relative">
+    <h2 className="text-black text-3xl sm:text-4xl md:text-5xl drop-shadow-xl font-extralight font-roboto text-center mb-4 pt-4">
+      Key Features
+    </h2>
+    {/* Cards Overlay on Background Image */}
+    <div
+      className="relative flex flex-col items-center justify-center bg-center bg-cover bg-no-repeat h-auto py-2" 
+      style={{
+        backgroundImage: "url('/LogoBlue.png')",
+        backgroundSize: "contain",
+      }}
+    >
+      <div className="grid gap-8 sm:gap-8 md:gap-8 lg:gap-6 md:grid-cols-1 lg:grid-cols-3 pb-2 md:pb-20 relative w-full pt-8 px-6 md:px-4 z-10">
+        {[
+          {
+            icon: Sparkles,
+            title: "Smart Contract Analysis",
+            description: "AI-driven contract review and risk assessment in minutes.",
+          },
+          {
+            icon: Brain,
+            title: "Legal Research Assistant",
+            description: "Intelligent case law search and analysis for faster insights.",
+          },
+          {
+            icon: Shield,
+            title: "Risk Analysis",
+            description: "Automated risk analysis across jurisdictions, identifying threats in real time.",
+          },
+        ].map((feature, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="bg-gray-800 bg-opacity-80 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <div className="text-blue-400 text-4xl mb-4 flex justify-center">
+              <feature.icon className="h-12 w-12" />
             </div>
+            <h3 className="text-2xl font-sans font-thin text-white text-center  mb-4">{feature.title}</h3>
+            <p className="text-white text-center">
+              {feature.description}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  </div>
 
             {/* Bottom Clipped Background */}
             <div className="absolute w-full inset-x-0 -bottom-28 sm:-bottom-32 md:-bottom-44 lg:-bottom-48 z-10">
@@ -408,5 +564,27 @@ export default function ModernLandingPage() {
         </footer>
       </div>
     </>
+  )
+}
+interface FeatureCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+  reversed?: boolean
+}
+
+function FeatureCard({ icon, title, description, reversed = false }: FeatureCardProps) {
+  return (
+    <div
+      className={`bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${reversed ? "md:translate-y-8" : ""}`}
+    >
+      <div className="flex items-start gap-4">
+        <div className="p-3 bg-slate-100 dark:bg-slate-700 rounded-lg">{icon}</div>
+        <div>
+          <h3 className="font-medium text-lg mb-2">{title}</h3>
+          <p className="font-thin leading-relaxed">{description}</p>
+        </div>
+      </div>
+    </div>
   )
 }

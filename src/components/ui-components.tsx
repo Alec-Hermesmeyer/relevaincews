@@ -72,6 +72,15 @@ export function CardContent({ className, ...props }: React.HTMLAttributes<HTMLDi
   return <div className={`p-6 pt-0 ${className}`} {...props} />
 }
 
+export const CardFooter = React.forwardRef<HTMLDivElement, React.ComponentPropsWithoutRef<"div">>(
+  ({ className, children, ...props }, ref) => (
+    <div ref={ref} className={cn("flex items-center p-6 pt-0", className)} {...props}>
+      {children}
+    </div>
+  )
+)
+CardFooter.displayName = "CardFooter"
+
 // Input Component
 // export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
