@@ -93,7 +93,7 @@ export default function Page() {
             className="w-24 h-24 mx-auto rounded-full mb-4"
           /> */}
           <CardTitle className="text-lg font-semibold">Victor Nilson</CardTitle>
-          <p className="text-sm text-gray-600">Founder & CEO</p>
+          <p className="text-sm text-gray-600">Founder & Principal</p>
         </CardHeader>
         <CardContent>
           <p>
@@ -118,7 +118,7 @@ export default function Page() {
             className="w-24 h-24 mx-auto rounded-full mb-4"
           /> */}
           <CardTitle className="text-lg font-semibold">Lisa Zamaludin Henry</CardTitle>
-          <p className="text-sm text-gray-600">Founder & CAO</p>
+          <p className="text-sm text-gray-600">Founder & Principal</p>
         </CardHeader>
         <CardContent>
           <p>

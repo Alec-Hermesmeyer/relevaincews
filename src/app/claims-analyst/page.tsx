@@ -6,73 +6,62 @@ export default function ClaimsAnalystPage() {
   return (
     <div className="flex overflow-x-hidden flex-col min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
       <main>
-        {/* Hero Section */}
-        <section className="relative px-6 sm:px-10 md:px-20 py-12 sm:py-16 md:py-20 max-w-8xl w-full mx-auto bg-[#10275E] flex items-center justify-center text-center">
-          <div className="relative z-10 p-6 sm:p-10 text-center max-w-6xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">Claims Analyst</h1>
-            <p className="text-blue-100 text-xl sm:text-2xl mb-8 max-w-4xl mx-auto">
-              Process and analyze claims with AI-powered precision to identify patterns, detect anomalies, and generate comprehensive risk assessments.
+        {/* Header Section */}
+        <section className="py-16 bg-blueback text-white">
+          <div className="container mx-auto px-6 max-w-7xl text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">CLAIMS ANALYST</h1>
+            <p className="text-xl max-w-3xl mx-auto">
+              A Virtual Research Team at your Fingertips
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
-                Request Demo
-              </Button>
-              <Button className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
-                Learn More
-              </Button>
-            </div>
           </div>
         </section>
 
-        {/* Overview Section */}
+        {/* Fact Analyst Section */}
         <section className="py-16 bg-slate-100">
           <div className="container mx-auto px-6 max-w-7xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left">
-                <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-blueback">Claims Analyst Overview</h2>
-                <p className="text-xl mb-6 text-gray-700">
-                  The
-                  <span className="inline-flex items-center">
-                    <Image
-                      src="/Wordmark_w_TM - Black.png"
-                      alt="RelevAInce"
-                      width={120}
-                      height={50}
-                      className="h-auto w-auto mx-2"
-                    />
-                  </span>
-                  Claims Analyst transforms how legal professionals evaluate and process claims, using advanced AI to review documentation, analyze patterns, and assess risks with unprecedented accuracy and speed.
-                </p>
-                <p className="text-lg text-gray-600 mb-6">
-                  By applying sophisticated algorithms to your claims data, the system can identify trends, flag potential issues, and recommend optimal strategies based on historical outcomes and legal precedents.
-                </p>
-                <div className="space-y-4">
+                <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-blueback">Fact Analyst</h2>
+
+                <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="text-blue-600 mr-4 mt-1">
+                    <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                       </svg>
                     </div>
-                    <p className="text-lg text-gray-700">Reduces claims processing time by up to 75%</p>
+                    <div>
+                      <h3 className="text-lg font-medium text-gray-800 mb-1">Comprehensive Fact Analyst</h3>
+                      <p className="text-gray-600">Automatically extracts key facts from very large datasets in minutes, not weeks</p>
+                    </div>
                   </div>
+
                   <div className="flex items-start">
-                    <div className="text-blue-600 mr-4 mt-1">
+                    <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>
                     </div>
-                    <p className="text-lg text-gray-700">Improves accuracy of risk assessments by 42%</p>
+                    <div>
+                      <h3 className="text-lg font-medium text-gray-800 mb-1">Witness Identification</h3>
+                      <p className="text-gray-600">Identifies and profiles key witnesses, including their relevance to specific issues</p>
+                    </div>
                   </div>
+
                   <div className="flex items-start">
-                    <div className="text-blue-600 mr-4 mt-1">
+                    <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                     </div>
-                    <p className="text-lg text-gray-700">Analyzes thousands of claims simultaneously</p>
+                    <div>
+                      <h3 className="text-lg font-medium text-gray-800 mb-1">Chronology Creation</h3>
+                      <p className="text-gray-600">Constructs timelines to visualize the sequence of events in your case</p>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div className="bg-white rounded-xl shadow-xl overflow-hidden">
                 <div className="bg-gray-800 p-4">
                   <div className="flex items-center justify-between">
@@ -82,302 +71,502 @@ export default function ClaimsAnalystPage() {
                       <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                     </div>
                     <div className="text-xs text-green-400 font-mono">
-                      Claims Database: 45,873 records ✓
+                      Processing: 83% ▓▓▓▓▓▓▓▓▓░
                     </div>
                   </div>
                 </div>
+
                 <div className="p-4 bg-gray-100 border-b border-gray-300">
                   <div className="flex justify-between items-center">
-                    <div className="font-semibold text-blueback">Claim Risk Assessment</div>
-                    <div className="text-xs text-gray-500">Batch ID: CL-2025-03-19-0032</div>
+                    <div className="font-semibold text-blueback">Fact Analyst</div>
+                    <div className="text-xs text-gray-500">ID: FA-3247</div>
                   </div>
                 </div>
+
                 <div className="p-6">
-                  <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-gray-800">Claim Validity Score</span>
-                      <span className="font-bold text-green-600">87%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
-                      <div className="bg-green-600 h-2.5 rounded-full" style={{ width: "87%" }}></div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-gray-800">Settlement Probability</span>
-                      <span className="font-bold text-yellow-600">62%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
-                      <div className="bg-yellow-500 h-2.5 rounded-full" style={{ width: "62%" }}></div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-gray-800">Financial Risk Exposure</span>
-                      <span className="font-bold text-blue-600">$147,500</span>
-                    </div>
-                    <div className="text-sm text-gray-600 mt-2">
-                      <div className="flex justify-between">
-                        <span>Confidence Level:</span>
-                        <span className="font-medium">93%</span>
+                  <div className="space-y-6">
+                    {/* Key Facts Block */}
+                    <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                      <div className="flex items-center mb-3">
+                        <svg className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17v-6h13V7H9V5l-7 7 7 7z" />
+                        </svg>
+                        <h4 className="font-semibold text-gray-800 text-sm uppercase tracking-wide">Key Facts</h4>
                       </div>
-                      <div className="flex justify-between mt-1">
-                        <span>Similar Claims Avg. Payout:</span>
-                        <span className="font-medium">$152,340</span>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li className="flex items-start">
+                          <span className="text-blue-400 mr-2 mt-1">•</span> Contract signed on March 3, 2019
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-blue-400 mr-2 mt-1">•</span> Client terminated agreement in July 2020
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-blue-400 mr-2 mt-1">•</span> Multiple email exchanges regarding breach of contract
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Key Witnesses Block */}
+                    <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                      <div className="flex items-center mb-3">
+                        <svg className="h-5 w-5 text-yellow-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5.121 17.804A10.97 10.97 0 0112 15c2.003 0 3.867.588 5.414 1.596M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <h4 className="font-semibold text-gray-800 text-sm uppercase tracking-wide">Key Witnesses</h4>
                       </div>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li className="flex items-start">
+                          <span className="text-yellow-400 mr-2 mt-1">•</span> Jane Doe (Project Manager)
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-yellow-400 mr-2 mt-1">•</span> John Smith (Legal Counsel)
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-yellow-400 mr-2 mt-1">•</span> Alex Johnson (Vendor Liaison)
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Key Chronology Block */}
+                    <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                      <div className="flex items-center mb-3">
+                        <svg className="h-5 w-5 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <h4 className="font-semibold text-gray-800 text-sm uppercase tracking-wide">Key Chronology</h4>
+                      </div>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li className="flex items-start">
+                          <span className="text-purple-400 mr-2 mt-1">•</span> 2018 - Initial project discussions
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-purple-400 mr-2 mt-1">•</span> 2019 - Contract finalized and signed
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-purple-400 mr-2 mt-1">•</span> 2020 - Dispute and termination
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-purple-400 mr-2 mt-1">•</span> 2021 - Lawsuit filed
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  
-                  <div className="mt-6 text-xs text-gray-500 flex justify-between">
-                    <span>Analysis completed in 3.2 seconds</span>
-                    <span>Based on 432 similar cases</span>
-                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Key Features Section */}
-        <section className="py-16 bg-[#10275E] text-white">
-          <div className="container mx-auto px-6 max-w-7xl">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center">Key Features</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <div className="text-blue-400 text-4xl mb-4 flex justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white text-center mb-4">Automated Risk Scoring</h3>
-                <p className="text-gray-300 text-center">
-                  Generate comprehensive risk scores for claims based on multiple factors including precedent, evidence quality, and jurisdiction.
-                </p>
+
+        {/* Contract Analyst Section */}
+        <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+  <div className="container mx-auto px-6 max-w-7xl">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      {/* Left Column - The Visual Interface (Now First) */}
+      <div className="order-1 md:order-1">
+        <div className="bg-white rounded-xl shadow-xl overflow-hidden">
+          <div className="bg-gray-800 p-4">
+            <div className="flex items-center justify-between">
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               </div>
-              
-              <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <div className="text-blue-400 text-4xl mb-4 flex justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white text-center mb-4">Pattern Recognition</h3>
-                <p className="text-gray-300 text-center">
-                  Identify patterns and trends across claims to detect fraudulent activities, common issues, and successful resolution strategies.
-                </p>
-              </div>
-              
-              <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <div className="text-blue-400 text-4xl mb-4 flex justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white text-center mb-4">Predictive Analytics</h3>
-                <p className="text-gray-300 text-center">
-                  Forecast likely outcomes and timelines based on historical data and similar cases to optimize resource allocation.
-                </p>
-              </div>
-              
-              <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <div className="text-blue-400 text-4xl mb-4 flex justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white text-center mb-4">Document Analysis</h3>
-                <p className="text-gray-300 text-center">
-                  Automatically extract and analyze key information from claim documents, identifying inconsistencies and missing information.
-                </p>
-              </div>
-              
-              <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <div className="text-blue-400 text-4xl mb-4 flex justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white text-center mb-4">Jurisdictional Analysis</h3>
-                <p className="text-gray-300 text-center">
-                  Evaluate how different jurisdictions have historically ruled on similar claims to provide location-specific risk assessments.
-                </p>
-              </div>
-              
-              <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <div className="text-blue-400 text-4xl mb-4 flex justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white text-center mb-4">Batch Processing</h3>
-                <p className="text-gray-300 text-center">
-                  Process thousands of claims simultaneously with our cloud-based infrastructure, eliminating bottlenecks and backlogs.
-                </p>
+              <div className="text-xs text-green-400 font-mono">
+                Scanning: 76% ▓▓▓▓▓▓▓░░░
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Process Flow Section */}
-        <section className="py-16 bg-slate-100">
-          <div className="container mx-auto px-6 max-w-7xl">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center text-blueback">The Claims Analysis Process</h2>
-            
-            <div className="relative">
-              {/* Vertical line for desktop */}
-              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-blue-200 transform -translate-x-1/2"></div>
-              
-              {/* Process Steps */}
-              <div className="space-y-12 md:space-y-0 relative">
-                {/* Step 1 */}
-                <div className="md:grid md:grid-cols-2 md:gap-8 relative">
-                  <div className="md:text-right p-6 bg-white rounded-lg shadow-md md:mr-12">
-                    <h3 className="text-xl font-semibold text-blueback mb-3">1. Data Ingestion</h3>
-                    <p className="text-gray-700">Claims data is securely uploaded to the platform, including documents, images, and structured data from your existing systems.</p>
-                  </div>
-                  <div className="hidden md:block"></div>
-                  {/* Circle connector for desktop */}
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center w-10 h-10 rounded-full bg-blue-500 text-white font-bold">1</div>
-                </div>
-                
-                {/* Step 2 */}
-                <div className="md:grid md:grid-cols-2 md:gap-8 relative">
-                  <div className="hidden md:block"></div>
-                  <div className="p-6 bg-white rounded-lg shadow-md md:ml-12">
-                    <h3 className="text-xl font-semibold text-blueback mb-3">2. Document Analysis</h3>
-                    <p className="text-gray-700">AI analyzes all claim documents to extract key information, validate data consistency, and identify missing elements.</p>
-                  </div>
-                  {/* Circle connector for desktop */}
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center w-10 h-10 rounded-full bg-blue-500 text-white font-bold">2</div>
-                </div>
-                
-                {/* Step 3 */}
-                <div className="md:grid md:grid-cols-2 md:gap-8 relative">
-                  <div className="md:text-right p-6 bg-white rounded-lg shadow-md md:mr-12">
-                    <h3 className="text-xl font-semibold text-blueback mb-3">3. Risk Assessment</h3>
-                    <p className="text-gray-700">The system evaluates claim validity, settlement probability, and financial exposure based on multiple factors and historical data.</p>
-                  </div>
-                  <div className="hidden md:block"></div>
-                  {/* Circle connector for desktop */}
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center w-10 h-10 rounded-full bg-blue-500 text-white font-bold">3</div>
-                </div>
-                
-                {/* Step 4 */}
-                <div className="md:grid md:grid-cols-2 md:gap-8 relative">
-                  <div className="hidden md:block"></div>
-                  <div className="p-6 bg-white rounded-lg shadow-md md:ml-12">
-                    <h3 className="text-xl font-semibold text-blueback mb-3">4. Pattern Identification</h3>
-                    <p className="text-gray-700">Advanced algorithms detect patterns across claims to identify fraud indicators, common factors in successful claims, and optimization opportunities.</p>
-                  </div>
-                  {/* Circle connector for desktop */}
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center w-10 h-10 rounded-full bg-blue-500 text-white font-bold">4</div>
-                </div>
-                
-                {/* Step 5 */}
-                <div className="md:grid md:grid-cols-2 md:gap-8 relative">
-                  <div className="md:text-right p-6 bg-white rounded-lg shadow-md md:mr-12">
-                    <h3 className="text-xl font-semibold text-blueback mb-3">5. Recommendations</h3>
-                    <p className="text-gray-700">Based on the analysis, the system provides actionable recommendations for claim handling, resource allocation, and settlement strategies.</p>
-                  </div>
-                  <div className="hidden md:block"></div>
-                  {/* Circle connector for desktop */}
-                  <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center w-10 h-10 rounded-full bg-blue-500 text-white font-bold">5</div>
-                </div>
-              </div>
+          <div className="p-4 bg-gray-100 border-b border-gray-300">
+            <div className="flex justify-between items-center">
+              <div className="font-semibold text-blue-800">Contract Analyst</div>
+              <div className="text-xs text-gray-500 bg-white px-2 py-1 rounded-full shadow-sm">ID: CA-9518</div>
             </div>
           </div>
-        </section>
 
-        {/* Use Cases Section */}
-        <section className="py-16 bg-[#10275E] text-white">
-          <div className="container mx-auto px-6 max-w-7xl">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center">Claims Analyst Use Cases</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Insurance Processing</h3>
-                <p className="text-gray-300 mb-4">Streamline insurance claim processing with automated validity checks and fraud detection.</p>
-                <div className="text-sm bg-gray-700 bg-opacity-50 p-3 rounded">
-                  <span className="text-blue-300 block mb-1">Key Results:</span>
-                  <ul className="list-disc pl-5 text-blue-100 space-y-1">
-                    <li>67% faster processing time</li>
-                    <li>28% reduction in fraudulent claims</li>
-                    <li>$4.2M annual cost savings</li>
-                  </ul>
-                </div>
+          <div className="p-6 space-y-6">
+            {/* Analysis Cards */}
+            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+              <div className="flex items-center mb-3">
+                <svg className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+                </svg>
+                <h4 className="font-semibold text-gray-800 text-sm uppercase tracking-wide">Relevant Provisions</h4>
               </div>
-              
-              <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Litigation Assessment</h3>
-                <p className="text-gray-300 mb-4">Evaluate litigation risks and potential outcomes to inform settlement decisions.</p>
-                <div className="text-sm bg-gray-700 bg-opacity-50 p-3 rounded">
-                  <span className="text-blue-300 block mb-1">Key Results:</span>
-                  <ul className="list-disc pl-5 text-blue-100 space-y-1">
-                    <li>42% improved outcome prediction</li>
-                    <li>31% reduction in legal costs</li>
-                    <li>Faster case resolution by 4.5 months</li>
-                  </ul>
-                </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2 mt-1">&bull;</span> Section 4.2: Confidentiality Clause
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2 mt-1">&bull;</span> Section 12.3: Delivery Timelines
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2 mt-1">&bull;</span> Section 18.2: Termination Terms
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+              <div className="flex items-center mb-3">
+                <svg className="h-5 w-5 text-yellow-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01M21 12A9 9 0 113 12a9 9 0 0118 0z" />
+                </svg>
+                <h4 className="font-semibold text-gray-800 text-sm uppercase tracking-wide">Potential Violations</h4>
               </div>
-              
-              <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Healthcare Claims</h3>
-                <p className="text-gray-300 mb-4">Optimize healthcare claim processing, coding validation, and compliance verification.</p>
-                <div className="text-sm bg-gray-700 bg-opacity-50 p-3 rounded">
-                  <span className="text-blue-300 block mb-1">Key Results:</span>
-                  <ul className="list-disc pl-5 text-blue-100 space-y-1">
-                    <li>53% increase in processing volume</li>
-                    <li>92% accuracy in coding validation</li>
-                    <li>23% reduction in denial rates</li>
-                  </ul>
-                </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-yellow-400 mr-2 mt-1">&bull;</span> Breach of delivery deadlines (Section 12.3)
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-400 mr-2 mt-1">&bull;</span> Ambiguity in penalty clauses
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+              <div className="flex items-center mb-3">
+                <svg className="h-5 w-5 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6M3 6h18" />
+                </svg>
+                <h4 className="font-semibold text-gray-800 text-sm uppercase tracking-wide">Position Impacts</h4>
               </div>
-              
-              <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Bulk Settlement Analysis</h3>
-                <p className="text-gray-300 mb-4">Analyze large sets of similar claims to determine optimal settlement strategies.</p>
-                <div className="text-sm bg-gray-700 bg-opacity-50 p-3 rounded">
-                  <span className="text-blue-300 block mb-1">Key Results:</span>
-                  <ul className="list-disc pl-5 text-blue-100 space-y-1">
-                    <li>82% batch processing efficiency</li>
-                    <li>$2.8M reduction in settlement costs</li>
-                    <li>3.2x faster resolution times</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Fraud Detection</h3>
-                <p className="text-gray-300 mb-4">Identify potentially fraudulent claims using pattern recognition and anomaly detection.</p>
-                <div className="text-sm bg-gray-700 bg-opacity-50 p-3 rounded">
-                  <span className="text-blue-300 block mb-1">Key Results:</span>
-                  <ul className="list-disc pl-5 text-blue-100 space-y-1">
-                    <li>76% detection rate improvement</li>
-                    <li>12% reduction in false positives</li>
-                    <li>$7.3M in prevented fraudulent payouts</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Regulatory Compliance</h3>
-                <p className="text-gray-300 mb-4">Ensure claims processing meets regulatory requirements across multiple jurisdictions.</p>
-                <div className="text-sm bg-gray-700 bg-opacity-50 p-3 rounded">
-                  <span className="text-blue-300 block mb-1">Key Results:</span>
-                  <ul className="list-disc pl-5 text-blue-100 space-y-1">
-                    <li>99.7% compliance verification</li>
-                    <li>Zero regulatory penalties</li>
-                    <li>41% reduction in compliance costs</li>
-                  </ul>
-                </div>
-              </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-purple-400 mr-2 mt-1">&bull;</span> Weakens enforceability due to vague terms
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-400 mr-2 mt-1">&bull;</span> Strengthens buyer negotiation power
+                </li>
+              </ul>
+            </div>
+
+            <div className="text-xs text-gray-500 flex justify-between items-center pt-4 border-t border-gray-200">
+              <span>Contract Type: Service Agreement</span>
+              <span>Last updated: 23 minutes ago</span>
             </div>
           </div>
-        </section>
-
-        {/* ROI Calculator Section */}
-        </main>
         </div>
+      </div>
+
+      {/* Right Column - Descriptive Content */}
+      <div className="text-left order-2 md:order-2">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-blue-800">Contract Analyst</h2>
+        <div className="space-y-6">
+          <div className="flex items-start">
+            <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-1">Analysis of Key Terms</h3>
+              <p className="text-gray-600">Identifies relevant contract language and evaluates impact</p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                      </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-1">Identifies Potential Violations</h3>
+              <p className="text-gray-600">Identify terms that might have been breached</p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-1">Position Impact</h3>
+              <p className="text-gray-600">Assesses how contract terms impact the issues</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section className="py-16 bg-slate-100">
+  <div className="container mx-auto px-6 max-w-7xl">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="text-left">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-blueback">Research Analyst</h2>
+
+        <div className="space-y-6">
+          <div className="flex items-start">
+            <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-1">Legal Research</h3>
+              <p className="text-gray-600">Searches multiple jurisdictions and legal databases for relevant precedents</p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-1">Case Law Identification</h3>
+              <p className="text-gray-600">Identifies precedents most similar to your case facts and issues</p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-1">Position Strength Analysis</h3>
+              <p className="text-gray-600">Evaluates how case law affects the relative strength of each party's arguments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-xl overflow-hidden">
+        <div className="bg-gray-800 p-4">
+          <div className="flex items-center justify-between">
+            <div className="flex space-x-2">
+              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div className="text-xs text-green-400 font-mono">
+              Searching: 91% ▓▓▓▓▓▓▓▓▓░
+            </div>
+          </div>
+        </div>
+
+        <div className="p-4 bg-gray-100 border-b border-gray-300">
+          <div className="flex justify-between items-center">
+            <div className="font-semibold text-blueback">Research Analyst</div>
+            <div className="text-xs text-gray-500">ID: RA-6123</div>
+          </div>
+        </div>
+
+        <div className="p-6">
+          <div className="bg-blue-50 p-4 rounded-lg mb-6">
+            <div className="flex justify-between items-center mb-2">
+              <span className="text-sm font-medium text-gray-800">Research Progress</span>
+              <span className="text-sm font-medium text-blue-600">91%</span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-2.5">
+              <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "91%" }}></div>
+            </div>
+            <div className="mt-2 text-xs text-gray-500 flex justify-between">
+              <span>16 legal databases searched</span>
+              <span>27 relevant cases found</span>
+            </div>
+          </div>
+
+          <div className="space-y-4 mb-6">
+            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+              <div className="flex items-start">
+                <div className="text-blue-600 mr-3 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-sm font-medium text-gray-800">Smith v. Johnson (2020)</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+              <div className="flex items-start">
+                <div className="text-blue-600 mr-3 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-sm font-medium text-gray-800">Acme Corp v. XYZ Inc. (2022)</div>               </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+              <div className="flex items-start">
+                <div className="text-blue-600 mr-3 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-sm font-medium text-gray-800">Taylor v. Green (2021)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-xs text-gray-500 flex justify-between items-center pt-4 border-t border-gray-200">
+            <span>Search started: 09:32 AM</span>
+            <span>Last updated: 14 minutes ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        {/* Senior Research Analyst Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6 max-w-7xl">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+  <div className="bg-white rounded-xl shadow-xl overflow-hidden">
+    <div className="bg-gray-800 p-4">
+      <div className="flex items-center justify-between">
+        <div className="flex space-x-2">
+          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+          <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+          <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+        </div>
+        <div className="text-xs text-green-400 font-mono">Analyzing: 68% ▓▓▓▓▓▓░░░░</div>
+      </div>
+    </div>
+
+    <div className="p-4 bg-gray-100 border-b border-gray-300">
+      <div className="flex justify-between items-center">
+        <div className="font-semibold text-blueback">Senior Research Analyst</div>
+        <div className="text-xs text-gray-500">ID: SRA-1842</div>
+      </div>
+    </div>
+
+    <div className="p-6 space-y-6">
+      {/* Overall Evaluation */}
+      <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+        <h3 className="text-sm font-semibold text-blueback mb-2">Overall Evaluation of Party Positions</h3>
+        <p className="text-sm text-gray-700">
+          Party A presents a stronger contractual foundation and factual consistency across analyzed evidence. Party B relies more heavily on interpretation and lacks corroborating documentation in key areas.
+        </p>
+      </div>
+
+      {/* Likelihood of Assessment */}
+      <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+        <h3 className="text-sm font-semibold text-yellow-700 mb-2">Likelihood of Assessment</h3>
+        <p className="text-sm text-gray-700">
+          Based on the current analysis, Party A holds a higher likelihood of prevailing on the primary claim. However, Party B may retain leverage in areas involving procedural ambiguity or undefined terms.
+        </p>
+      </div>
+
+      {/* Synthesis of Findings */}
+      <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+        <h3 className="text-sm font-semibold text-gray-800 mb-3">Synthesis of Findings</h3>
+        <ul className="list-disc list-inside text-sm text-gray-700 space-y-2">
+          <li>Section 12.3 favors Party A&apos;s interpretation based on consistent precedent.</li>
+          <li>Key witness statements align more clearly with Party A&apos;s timeline.</li>
+          <li>Contract terms lack clarity in defining mutual obligations.</li>
+          <li>Party B&apos;s position is weakened by absence of delivery logs.</li>
+        </ul>
+      </div>
+
+      <div className="mt-6 text-xs text-gray-500 flex justify-between items-center pt-4 border-t border-gray-200">
+        <span>Expected completion: 45 minutes</span>
+        <span>Last updated: 31 minutes ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+              <div className="text-left order-1 md:order-2">
+                <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-blueback">Senior Research Analyst</h2>
+
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-medium text-gray-800 mb-1">Comprehensive Integration</h3>
+                      <p className="text-gray-600">Combines findings from facts, contracts, and case law into a unified analysis</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-medium text-gray-800 mb-1">Strategic Assessment</h3>
+                      <p className="text-gray-600">Provides position analysis with strategic recommendations</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-medium text-gray-800 mb-1">Strength/Weakness Analysis</h3>
+                      <p className="text-gray-600">Quantifies relative position strengths with supporting rationale</p>
+                    </div>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-b from-gray-800 to-gray-900 text-white text-center">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Transform Your Claims Process</h2>
+            <p className="text-xl mb-8">
+              Discover how our Claims Analyst can help you process claims faster, reduce risks, and improve outcomes
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/#demo">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
+                Request a Demo
+              </Button>
+              </Link>
+              <Link href="/#demo">
+              <Button className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
+                Contact Sales
+              </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <footer className="bg-gray-800 py-8">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-sm text-white">© 2025 RelevAInce All rights reserved.</p>
+          </div>
+        </footer>
+
+
+      </main>
+    </div>
   )
 }
