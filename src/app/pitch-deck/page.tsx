@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useRef } from "react"
+import { useState, useRef } from "react"
 import {
     Coins,
     TrendingDown,
@@ -15,31 +15,125 @@ import {
     Lightbulb,
     ListTodo,
     Target,
-    Handshake, Laptop, TargetIcon, Download
+    Handshake, Laptop, TargetIcon, Download, Loader
   } from "lucide-react"
   import { MarketChart } from "@/components/MarketChart"
   import { GrowthChart } from "@/components/growth-chart"
   import { FeatureCard } from "@/components/feature-card"
 import Link from "next/link"
+
+
+
 export default function Page() {
     const contentRef = useRef<HTMLDivElement>(null);
+    const [isGenerating, setIsGenerating] = useState(false);
     
     // Function to handle PDF download
-    const handleDownloadPDF = () => {
-      // This uses the browser's print functionality to generate a PDF
-      const printContent = () => {
-        const originalContents = document.body.innerHTML;
-        const printContents = contentRef.current?.innerHTML || "";
-        
-        document.body.innerHTML = printContents;
-        window.print();
-        document.body.innerHTML = originalContents;
-        
-        // Reapply event listeners or reinitialize components if needed
-        window.location.reload();
-      };
+    const handleDownloadPDF = async () => {
+      setIsGenerating(true);
       
-      printContent();
+      try {
+        // Import libraries dynamically to reduce initial load time
+        const jsPDFModule = await import('jspdf');
+        const html2canvasModule = await import('html2canvas');
+        const { jsPDF } = jsPDFModule;
+        const html2canvas = html2canvasModule.default;
+        
+        const contentElement = contentRef.current;
+        if (!contentElement) {
+          console.error('Content element is not available.');
+          return;
+        }
+        const sections = contentElement.querySelectorAll('section');
+        const pdf = new jsPDF({
+          orientation: 'portrait',
+          unit: 'mm',
+          format: 'a4',
+          compress: true
+        });
+        
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = pdf.internal.pageSize.getHeight();
+        const margins = 10; // margins in mm
+        
+        // Process each section
+        for (let i = 0; i < sections.length; i++) {
+          const section = sections[i];
+          
+          // Add a new page for each section after the first one
+          if (i > 0) {
+            pdf.addPage();
+          }
+          
+          // Determine background color based on section class
+          const isBlackBackground = section.classList.contains('bg-black');
+          
+          // Create a separate canvas for background
+          if (isBlackBackground) {
+            // Set background color for black sections
+            pdf.setFillColor(0, 0, 0);
+            pdf.rect(0, 0, pdfWidth, pdfHeight, 'F');
+          } else {
+            // Set background color for white sections
+            pdf.setFillColor(255, 255, 255);
+            pdf.rect(0, 0, pdfWidth, pdfHeight, 'F');
+          }
+          
+          // Temporarily modify section styling for better capture
+          const originalStyles = {
+            minHeight: section.style.minHeight,
+            height: section.style.height,
+            overflow: section.style.overflow,
+            position: section.style.position,
+            backgroundColor: section.style.backgroundColor
+          };
+          
+          // Ensure background color is set explicitly for canvas capture
+          if (isBlackBackground) {
+            section.style.backgroundColor = '#000000';
+          } else {
+            section.style.backgroundColor = '#FFFFFF';
+          }
+          
+          section.style.height = 'auto';
+          section.style.overflow = 'visible';
+          section.style.position = 'static';
+          
+          // Capture section as canvas with appropriate settings
+          const canvas = await html2canvas(section, {
+            scale: 2, // Higher scale for better quality
+            useCORS: true, // Allow cross-origin images
+            logging: false,
+            allowTaint: true,
+            backgroundColor: isBlackBackground ? '#000000' : '#FFFFFF'
+          });
+          
+          // Convert canvas to image
+          const imgData = canvas.toDataURL('image/jpeg', 1.0);
+          
+          // Calculate aspect ratio to fit within page
+          const imgWidth = pdfWidth - (2 * margins);
+          const imgHeight = (canvas.height * imgWidth) / canvas.width;
+          
+          // Add image to PDF
+          pdf.addImage(imgData, 'JPEG', margins, margins, imgWidth, imgHeight);
+          
+          // Restore original styles
+          section.style.minHeight = originalStyles.minHeight;
+          section.style.height = originalStyles.height;
+          section.style.overflow = originalStyles.overflow;
+          section.style.position = originalStyles.position;
+          section.style.backgroundColor = originalStyles.backgroundColor;
+        }
+        
+        // Save the PDF
+        pdf.save('Relevaince_Investment_Deck.pdf');
+      } catch (error) {
+        console.error('Error generating PDF:', error);
+        alert('There was an error generating the PDF. Please try again.');
+      } finally {
+        setIsGenerating(false);
+      }
     };
     
     const features = [
@@ -99,17 +193,27 @@ export default function Page() {
       <div className="fixed top-4 right-4 z-50">
         <button 
           onClick={handleDownloadPDF}
+          disabled={isGenerating}
           className="flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-colors"
         >
-          <Download className="mr-2 h-5 w-5" />
-          Download PDF
+          {isGenerating ? (
+            <>
+              <Loader className="mr-2 h-5 w-5 animate-spin" />
+              Generating PDF...
+            </>
+          ) : (
+            <>
+              <Download className="mr-2 h-5 w-5" />
+              Download PDF
+            </>
+          )}
         </button>
       </div>
 
       {/* Content to be printed/downloaded */}
       <div ref={contentRef}>
         {/* Title Section */}
-        <section className="min-h-screen relative overflow-hidden">
+        <section className="min-h-screen relative overflow-hidden bg-black">
           {/* Decorative waves - bottom left */}
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] pointer-events-none">
             <Image
@@ -761,7 +865,7 @@ export default function Page() {
               </div>
 
               {/* Bottom Row */}
-              <div className="grid md:grid-cols-2 gap-12">
+              <div className="grid md:grid-cols-3 gap-12">
                 {/* Al Hoover */}
                 <div className="text-center">
                   <div className="w-48 h-48 mx-auto mb-6">
@@ -791,7 +895,7 @@ export default function Page() {
                 </div>
 
                 {/* Rick Welday */}
-                {/* <div className="text-center">
+                <div className="text-center">
                   <div className="w-48 h-48 mx-auto mb-6">
                     <Image
                       src="/Rick.jpg"
@@ -802,7 +906,7 @@ export default function Page() {
                     />
                   </div>
                   <h3 className="text-2xl font-bold">Rick Welday</h3>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -860,43 +964,12 @@ export default function Page() {
         </section>
       </div>
 
-      {/* Custom print styles - These will only apply when printing */}
-      <style jsx global>{`
-        @media print {
-          body {
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
-          }
-          
-          /* Hide the download button when printing */
-          button {
-            display: none !important;
-          }
-          
-          /* Ensure each section starts on a new page */
-          section {
-            page-break-after: always;
-            break-after: page;
-          }
-          
-          /* Ensure proper background colors and images print */
-          .bg-black {
-            background-color: black !important;
-            color: white !important;
-          }
-          
-          .bg-white {
-            background-color: white !important;
-            color: black !important;
-          }
-          
-          /* Ensure images print well */
-          img {
-            max-width: 100% !important;
-            height: auto !important;
-          }
-        }
-      `}</style>
+      {/* Add package.json dependencies:
+      "dependencies": {
+        "html2canvas": "^1.4.1",
+        "jspdf": "^2.5.1"
+      }
+      */}
     </div>
   )
 }

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import type { Viewport } from "next";
 import localFont from "next/font/local";
 import Nav from "@/components/Nav";
+import { jsPDF } from "jspdf";
+import html2canvas from "html2canvas";
 import "./globals.css";
 
 const geistSans = localFont({
