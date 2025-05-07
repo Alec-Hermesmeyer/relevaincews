@@ -3,195 +3,254 @@
 import Image from "next/image"
 import { useState, useRef } from "react"
 import {
-    Coins,
-    TrendingDown,
-    Frown,
-    Squircle,
-    FileCheck,
-    AlertCircle,
-    ClipboardCheck,
-    HandCoins,
-    Scale,
-    Lightbulb,
-    ListTodo,
-    Target,
-    Handshake, Laptop, TargetIcon, Download, Loader
-  } from "lucide-react"
-  import { MarketChart } from "@/components/MarketChart"
-  import { GrowthChart } from "@/components/growth-chart"
-  import { FeatureCard } from "@/components/feature-card"
+  Coins,
+  TrendingDown,
+  Frown,
+  Squircle,
+  FileCheck,
+  AlertCircle,
+  ClipboardCheck,
+  HandCoins,
+  Scale,
+  Lightbulb,
+  ListTodo,
+  Target,
+  Handshake, Laptop, TargetIcon, Download, Loader
+} from "lucide-react"
+import { MarketChart } from "@/components/MarketChart"
+import { GrowthChart } from "@/components/growth-chart"
+import { FeatureCard } from "@/components/feature-card"
 import Link from "next/link"
 
 
 
 export default function Page() {
-    const contentRef = useRef<HTMLDivElement>(null);
-    const [isGenerating, setIsGenerating] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [isGenerating, setIsGenerating] = useState(false);
+
+  // Desktop-optimized PDF generator with responsive handling
+  // Reliable PDF generator with robust error handling
+  // Fixed PDF generator with scope error resolved
+// Fully fixed PDF generator with all TypeScript errors resolved
+const handleDownloadPDF = async () => {
+  setIsGenerating(true);
+  
+  try {
+    // Import libraries dynamically
+    const jsPDFModule = await import('jspdf');
+    const html2canvasModule = await import('html2canvas');
+    const { jsPDF } = jsPDFModule;
+    const html2canvas = html2canvasModule.default;
     
-    // Function to handle PDF download
-    const handleDownloadPDF = async () => {
-      setIsGenerating(true);
+    const contentElement = contentRef.current;
+    if (!contentElement) {
+      console.error('Content element is not available.');
+      return;
+    }
+    
+    // Get all sections
+    const sections = contentElement.querySelectorAll('section');
+    console.log(`Found ${sections.length} sections to process`);
+    
+    // Create PDF with default settings - A4 format
+    const pdf = new jsPDF({
+      orientation: 'portrait',
+      unit: 'mm',
+      format: 'a4',
+      compress: true
+    });
+    
+    // Get PDF dimensions
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight = pdf.internal.pageSize.getHeight();
+    console.log(`PDF dimensions: ${pdfWidth}mm x ${pdfHeight}mm`);
+    
+    // Set moderate margins
+    const margins = 10;
+    
+    // Process each section with error handling for each section
+    for (let i = 0; i < sections.length; i++) {
+      // Define section outside the try block so it's available in the catch block
+      const section = sections[i];
+      let isBlackBackground = false;
       
       try {
-        // Import libraries dynamically to reduce initial load time
-        const jsPDFModule = await import('jspdf');
-        const html2canvasModule = await import('html2canvas');
-        const { jsPDF } = jsPDFModule;
-        const html2canvas = html2canvasModule.default;
-        
-        const contentElement = contentRef.current;
-        if (!contentElement) {
-          console.error('Content element is not available.');
-          return;
+        // Add a new page for each section after the first one
+        if (i > 0) {
+          pdf.addPage();
         }
-        const sections = contentElement.querySelectorAll('section');
-        const pdf = new jsPDF({
-          orientation: 'portrait',
-          unit: 'mm',
-          format: 'a4',
-          compress: true
+        
+        // Determine background color based on section class
+        isBlackBackground = section.classList.contains('bg-black');
+        console.log(`Processing section ${i + 1}/${sections.length} (${isBlackBackground ? 'black' : 'white'} background)`);
+        
+        // Set page background color
+        if (isBlackBackground) {
+          pdf.setFillColor(0, 0, 0);
+          pdf.rect(0, 0, pdfWidth, pdfHeight, 'F');
+        } else {
+          pdf.setFillColor(255, 255, 255);
+          pdf.rect(0, 0, pdfWidth, pdfHeight, 'F');
+        }
+        
+        // Store original styles
+        const originalStyles = {
+          minHeight: section.style.minHeight,
+          height: section.style.height,
+          overflow: section.style.overflow,
+          position: section.style.position,
+          backgroundColor: section.style.backgroundColor
+        };
+        
+        // Prepare section for capture
+        if (isBlackBackground) {
+          section.style.backgroundColor = '#000000';
+        } else {
+          section.style.backgroundColor = '#FFFFFF';
+        }
+        
+        // Keep original dimensions but modify other styles for capture
+        section.style.overflow = 'visible';
+        section.style.position = 'relative';
+        
+        // Use a moderate scale that works reliably
+        const scale = 2;
+        
+        console.log(`Capturing section ${i + 1} with html2canvas...`);
+        // Capture section with basic reliable settings
+        const canvas = await html2canvas(section, {
+          scale: scale,
+          useCORS: true,
+          allowTaint: true,
+          backgroundColor: isBlackBackground ? '#000000' : '#FFFFFF',
+          logging: true, // Enable logging for debugging
+          imageTimeout: 15000, // Increased timeout for image loading
         });
         
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = pdf.internal.pageSize.getHeight();
-        const margins = 10; // margins in mm
+        console.log(`Section ${i + 1} captured. Canvas size: ${canvas.width}x${canvas.height}`);
         
-        // Process each section
-        for (let i = 0; i < sections.length; i++) {
-          const section = sections[i];
-          
-          // Add a new page for each section after the first one
-          if (i > 0) {
-            pdf.addPage();
-          }
-          
-          // Determine background color based on section class
-          const isBlackBackground = section.classList.contains('bg-black');
-          
-          // Create a separate canvas for background
-          if (isBlackBackground) {
-            // Set background color for black sections
-            pdf.setFillColor(0, 0, 0);
-            pdf.rect(0, 0, pdfWidth, pdfHeight, 'F');
-          } else {
-            // Set background color for white sections
-            pdf.setFillColor(255, 255, 255);
-            pdf.rect(0, 0, pdfWidth, pdfHeight, 'F');
-          }
-          
-          // Temporarily modify section styling for better capture
-          const originalStyles = {
-            minHeight: section.style.minHeight,
-            height: section.style.height,
-            overflow: section.style.overflow,
-            position: section.style.position,
-            backgroundColor: section.style.backgroundColor
-          };
-          
-          // Ensure background color is set explicitly for canvas capture
-          if (isBlackBackground) {
-            section.style.backgroundColor = '#000000';
-          } else {
-            section.style.backgroundColor = '#FFFFFF';
-          }
-          
-          section.style.height = 'auto';
-          section.style.overflow = 'visible';
-          section.style.position = 'static';
-          
-          // Capture section as canvas with appropriate settings
-          const canvas = await html2canvas(section, {
-            scale: 2, // Higher scale for better quality
-            useCORS: true, // Allow cross-origin images
-            logging: false,
-            allowTaint: true,
-            backgroundColor: isBlackBackground ? '#000000' : '#FFFFFF'
-          });
-          
-          // Convert canvas to image
-          const imgData = canvas.toDataURL('image/jpeg', 1.0);
-          
-          // Calculate aspect ratio to fit within page
-          const imgWidth = pdfWidth - (2 * margins);
-          const imgHeight = (canvas.height * imgWidth) / canvas.width;
-          
-          // Add image to PDF
-          pdf.addImage(imgData, 'JPEG', margins, margins, imgWidth, imgHeight);
-          
-          // Restore original styles
-          section.style.minHeight = originalStyles.minHeight;
-          section.style.height = originalStyles.height;
-          section.style.overflow = originalStyles.overflow;
-          section.style.position = originalStyles.position;
-          section.style.backgroundColor = originalStyles.backgroundColor;
+        // Convert canvas to image with good quality
+        const imgData = canvas.toDataURL('image/jpeg', 0.95);
+        
+        // Calculate dimensions to fit within page with margins
+        const availableWidth = pdfWidth - (2 * margins);
+        let imgWidth = availableWidth;
+        let imgHeight = (canvas.height * imgWidth) / canvas.width;
+        
+        // If height exceeds available height, scale down proportionally
+        const availableHeight = pdfHeight - (2 * margins);
+        if (imgHeight > availableHeight) {
+          imgHeight = availableHeight;
+          imgWidth = (canvas.width * imgHeight) / canvas.height;
         }
         
-        // Save the PDF
-        pdf.save('Relevaince_Investment_Deck.pdf');
-      } catch (error) {
-        console.error('Error generating PDF:', error);
-        alert('There was an error generating the PDF. Please try again.');
-      } finally {
-        setIsGenerating(false);
+        // Center the image on the page
+        const xOffset = (pdfWidth - imgWidth) / 2;
+        const yOffset = (pdfHeight - imgHeight) / 2;
+        
+        console.log(`Adding image to PDF: ${imgWidth}mm x ${imgHeight}mm at position (${xOffset}, ${yOffset})`);
+        
+        // Add image to PDF
+        pdf.addImage(imgData, 'JPEG', xOffset, yOffset, imgWidth, imgHeight);
+        
+        // Restore original styles
+        section.style.minHeight = originalStyles.minHeight;
+        section.style.height = originalStyles.height;
+        section.style.overflow = originalStyles.overflow;
+        section.style.position = originalStyles.position;
+        section.style.backgroundColor = originalStyles.backgroundColor;
+        
+        console.log(`Section ${i + 1}/${sections.length} processed successfully`);
+      } catch (sectionError) {
+        // Log error but continue processing other sections
+        console.error(`Error processing section ${i + 1}:`, sectionError);
+        
+        // Add a text note about the error in the PDF
+        pdf.setTextColor(isBlackBackground ? 255 : 0);
+        pdf.setFontSize(12);
+        pdf.text(`Error rendering section ${i + 1}. Please check console for details.`, 20, 20);
       }
-    };
+    }
     
-    const features = [
-        {
-          title: "Real Time Fact Checking",
-          icon: FileCheck,
-          position: "top-[15%] left-[20%]",
-          gradient: "from-blue-600 to-blue-800",
-        },
-        {
-          title: "Early Risk Assessment",
-          icon: AlertCircle,
-          position: "top-[15%] right-[20%]",
-          gradient: "from-blue-700 to-blue-900",
-        },
-        {
-          title: "Early Case Assessment",
-          icon: ClipboardCheck,
-          position: "top-[35%] right-[10%]",
-          gradient: "from-blue-800 to-indigo-900",
-        },
-        {
-          title: "Enhanced Value for Clients",
-          icon: HandCoins,
-          position: "bottom-[35%] right-[10%]",
-          gradient: "from-indigo-700 to-indigo-900",
-        },
-        {
-          title: "Level the Playing Field",
-          icon: Scale,
-          position: "bottom-[15%] right-[20%]",
-          gradient: "from-indigo-700 to-indigo-900",
-        },
-        {
-          title: "Enhanced Clarity",
-          icon: Lightbulb,
-          position: "bottom-[15%] left-[20%]",
-          gradient: "from-blue-800 to-indigo-900",
-        },
-        {
-          title: "Allocated Time for Strategic Priorities",
-          icon: ListTodo,
-          position: "bottom-[35%] left-[10%]",
-          gradient: "from-blue-700 to-blue-900",
-        },
-        {
-          title: "Execution",
-          icon: Target,
-          position: "top-[35%] left-[10%]",
-          gradient: "from-blue-600 to-blue-800",
-        },
-      ]
+    console.log('All sections processed, saving PDF...');
     
+    // Add metadata
+    pdf.setProperties({
+      title: 'Relevaince Investment Deck',
+      subject: 'Investment Deck',
+      author: 'Relevaince',
+      keywords: 'AI, Investment, Relevaince',
+      creator: 'Relevaince PDF Generator'
+    });
+    
+    // Save the PDF
+    pdf.save('Relevaince_Investment_Deck.pdf');
+    console.log('PDF saved successfully');
+  } catch (error) {
+    console.error('Error generating PDF:', error);
+    alert('There was an error generating the PDF. Please check the console for details.');
+  } finally {
+    setIsGenerating(false);
+  }
+};
+
+
+  const features = [
+    {
+      title: "Real Time Fact Checking",
+      icon: FileCheck,
+      position: "top-[15%] left-[20%]",
+      gradient: "from-blue-600 to-blue-800",
+    },
+    {
+      title: "Early Risk Assessment",
+      icon: AlertCircle,
+      position: "top-[15%] right-[20%]",
+      gradient: "from-blue-700 to-blue-900",
+    },
+    {
+      title: "Early Case Assessment",
+      icon: ClipboardCheck,
+      position: "top-[35%] right-[10%]",
+      gradient: "from-blue-800 to-indigo-900",
+    },
+    {
+      title: "Enhanced Value for Clients",
+      icon: HandCoins,
+      position: "bottom-[35%] right-[10%]",
+      gradient: "from-indigo-700 to-indigo-900",
+    },
+    {
+      title: "Level the Playing Field",
+      icon: Scale,
+      position: "bottom-[15%] right-[20%]",
+      gradient: "from-indigo-700 to-indigo-900",
+    },
+    {
+      title: "Enhanced Clarity",
+      icon: Lightbulb,
+      position: "bottom-[15%] left-[20%]",
+      gradient: "from-blue-800 to-indigo-900",
+    },
+    {
+      title: "Allocated Time for Strategic Priorities",
+      icon: ListTodo,
+      position: "bottom-[35%] left-[10%]",
+      gradient: "from-blue-700 to-blue-900",
+    },
+    {
+      title: "Execution",
+      icon: Target,
+      position: "top-[35%] left-[10%]",
+      gradient: "from-blue-600 to-blue-800",
+    },
+  ]
+
   return (
     <div className="bg-black text-white">
       {/* Download Button - Fixed position */}
       <div className="fixed top-4 right-4 z-50">
-        <button 
+        <button
           onClick={handleDownloadPDF}
           disabled={isGenerating}
           className="flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-colors"
@@ -651,8 +710,8 @@ export default function Page() {
             </div>
           </div>
         </section>
-         {/* Roadmap Section */}
-         <section className="min-h-screen bg-black text-white px-4 py-20">
+        {/* Roadmap Section */}
+        <section className="min-h-screen bg-black text-white px-4 py-20">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">
@@ -716,8 +775,8 @@ export default function Page() {
             </div>
           </div>
         </section>
-         {/* Leadership Team Section */}
-         <section className="min-h-screen bg-black text-white px-4 py-20">
+        {/* Leadership Team Section */}
+        <section className="min-h-screen bg-black text-white px-4 py-20">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">
@@ -809,8 +868,8 @@ export default function Page() {
             </div>
           </div>
         </section>
-         {/* Advisory Board Section */}
-         <section className="min-h-screen bg-black text-white px-4 py-20">
+        {/* Advisory Board Section */}
+        <section className="min-h-screen bg-black text-white px-4 py-20">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">
@@ -915,15 +974,15 @@ export default function Page() {
           <div className="max-w-6xl mx-auto">
             {/* Logo */}
             <div className="mx-auto w-full max-w-2xl">
-                <Image
-                  src="/Wordmark_w_TM - White.png" // Replace with your actual Relevaince TM logo image URL
-                  alt="RELEVAINCE TM"
-                  width={600}
-                  height={120}
-                  className="w-full h-auto mb-8"
-                  priority
-                />
-              </div>
+              <Image
+                src="/Wordmark_w_TM - White.png" // Replace with your actual Relevaince TM logo image URL
+                alt="RELEVAINCE TM"
+                width={600}
+                height={120}
+                className="w-full h-auto mb-8"
+                priority
+              />
+            </div>
 
             {/* Decorative Lines */}
             <div className="space-y-3 mb-16">
