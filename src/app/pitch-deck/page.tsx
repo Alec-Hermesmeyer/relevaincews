@@ -450,7 +450,7 @@ export default function Page() {
             <div className="text-center space-y-6 mb-16">
               <h2 className="text-4xl md:text-6xl font-bold">A LEAP FORWARD FROM GENAI</h2>
               <p className="text-xl md:text-3xl">
-                <span className="border-b-2 pb-1">USERS CAN</span> FINALLY PUT THEIR DATA TO WORK FOR THEM
+                USERS CAN FINALLY PUT THEIR DATA TO WORK FOR THEM
               </p>
             </div>
 
