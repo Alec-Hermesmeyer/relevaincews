@@ -865,7 +865,7 @@ export default function Page() {
               </div>
 
               {/* Bottom Row */}
-              <div className="grid md:grid-cols-3 gap-12">
+              <div className="grid md:grid-cols-2 gap-12">
                 {/* Al Hoover */}
                 <div className="text-center">
                   <div className="w-48 h-48 mx-auto mb-6">
@@ -895,7 +895,7 @@ export default function Page() {
                 </div>
 
                 {/* Rick Welday */}
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="w-48 h-48 mx-auto mb-6">
                     <Image
                       src="/Rick.jpg"
@@ -906,7 +906,7 @@ export default function Page() {
                     />
                   </div>
                   <h3 className="text-2xl font-bold">Rick Welday</h3>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
