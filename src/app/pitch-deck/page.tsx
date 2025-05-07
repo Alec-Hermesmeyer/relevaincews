@@ -564,7 +564,7 @@ export default function Page() {
           {/* Decorative wave - top right */}
           <div className="absolute top-0 right-0 w-[400px] h-[400px] pointer-events-none">
             <Image
-              src="/Picture2.png" // Replace with your actual wave image URL
+              src="/Picture1.png" // Replace with your actual wave image URL
               alt="Decorative wave pattern"
               width={400}
               height={400}
@@ -629,7 +629,7 @@ export default function Page() {
           {/* Decorative wave - top right */}
           <div className="absolute top-0 right-0 w-[400px] h-[400px] pointer-events-none">
             <Image
-              src="/Picture2.png" // Replace with your actual wave image URL
+              src="/Picture1.png" // Replace with your actual wave image URL
               alt="Decorative wave pattern"
               width={400}
               height={400}
