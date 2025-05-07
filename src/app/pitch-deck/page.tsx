@@ -249,7 +249,7 @@ const handleDownloadPDF = async () => {
   return (
     <div className="bg-black text-white">
       {/* Download Button - Fixed position */}
-      <div className="fixed top-4 right-4 z-50">
+      {/* <div className="fixed top-4 right-4 z-50">
         <button
           onClick={handleDownloadPDF}
           disabled={isGenerating}
@@ -267,7 +267,7 @@ const handleDownloadPDF = async () => {
             </>
           )}
         </button>
-      </div>
+      </div> */}
 
       {/* Content to be printed/downloaded */}
       <div ref={contentRef}>
